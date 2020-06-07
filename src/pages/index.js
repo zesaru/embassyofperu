@@ -1,22 +1,59 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Imagen from "../components/image"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+const IndexPage = () => {
+  return (
+    <Layout>
+      <Imagen></Imagen>
+      <section class="secundary-menu-container">
+        <ul>
+          <li>
+            <Link to="#">
+              <img height="55px" src="./img/meeting.png" alt="" />
+              <span> Actividades del Embajador</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="#">
+              <img height="55px" src="./img/gastro.png" alt="" />
+              <span>Gastronomía</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="#">
+              <img height="55px" src="./img/turismo.png" alt="" />
+              <span>Turismo</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="#">
+              <img height="55px" src="./img/comercio.png" alt="" />
+              <span>Comercio</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="#">
+              <img height="55px" src="./img/cultura.png" alt="" />
+              <span>Cultura</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="#">
+              <img height="55x" src="./img/consulados.png" alt="" />
+              <span>Consulados</span>
+            </Link>
+          </li>
+        </ul>
+      </section>
+      <div class="social">
+        <img height="55px" src="./img/facebook.png" alt="" />
+        <img height="55px" src="./img/twitter.png" alt="" />
+        <img height="55px" src="./img/instagram.png" alt="" />
+      </div>
+    </Layout>
+  )
+}
 
 export default IndexPage

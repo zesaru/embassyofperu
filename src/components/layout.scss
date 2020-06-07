@@ -1,0 +1,163 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+nav {
+  display: flexbox;
+}
+
+nav .logo {
+  display: flex;
+  padding-top: 20px;
+}
+
+nav img {
+  height: 50px;
+}
+
+nav .red-bar {
+  height: 50px;
+  width: 3px;
+  margin: 0px 0px 0px 15px;
+  background-color: #E00816;
+}
+
+h1 {
+  text-align: center;
+  margin: 2px;
+  font-size: 1.2rem;
+  padding-top: 14px;
+}
+
+nav {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+}
+
+.banner-section {
+  height: 200px;
+  background: url('../images/banner1.jpg') no-repeat center center fixed;
+}
+
+.secundary-menu-container ul {
+  margin: 0;
+  padding: 0;
+}
+
+.secundary-menu-container ul li {
+  list-style: none;
+  border: solid 1px #707070;
+  margin: 6px 0px;
+}
+
+.secundary-menu-container ul li a {
+  text-decoration: none;
+  color: #707070;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.secundary-menu-container ul li a img {
+  padding: 4px 8px;
+}
+
+.social {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.enlacesdeinteres {
+  padding: 5px 7px 4px 0px;
+  border-left: solid 4px #E00816;
+}
+
+footer {
+  background-color: #4D4949;
+  color: white;
+  padding: 10px 0px 0px 10px;
+}
+
+.enlacesdeinteres p,
+span {
+  padding-left: 4px;
+}
+
+.menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &__button {
+    margin: 2px;
+    padding: 11px 21px;
+    background: url('../images/menu.svg') no-repeat center;
+  }
+
+  &__checkbox {
+    display: none;
+
+    &:checked {
+      &~.menu__button {
+        background: url('../images/icon-close.svg') no-repeat center;
+      }
+
+      &~.menu {
+        display: block;
+        position: absolute;
+        top: 100%;
+        padding: 1em;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        background: linear-gradient(to bottom, var(--darkBlue) 0%, transparent 90%);
+
+        .menu__item {
+          &:first-of-type a {
+            padding-top: 2em;
+            border-radius: .5em .5em 0 0;
+          }
+
+          &:last-of-type a {
+            padding-bottom: 2em;
+            border-radius: 0 0 .5em .5em;
+          }
+        }
+
+        a {
+          background: white;
+          color: #4D4949;
+          text-decoration: none;
+          padding: .8em 1em;
+          font-size: 1.1em;
+          display: block;
+          text-align: center;
+          flex: 1;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+
+    &__button {
+      display: none;
+    }
+  }
+}
