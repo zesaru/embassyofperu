@@ -7,7 +7,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Imagen></Imagen>
-      <section class="secundary-menu-container">
+      <section className="secundary-menu-container">
         <ul>
           <li>
             <Link to="#">
@@ -47,7 +47,7 @@ const IndexPage = () => {
           </li>
         </ul>
       </section>
-      <div class="social">
+      <div className="social">
         <img height="55px" src="./img/facebook.png" alt="" />
         <img height="55px" src="./img/twitter.png" alt="" />
         <img height="55px" src="./img/instagram.png" alt="" />

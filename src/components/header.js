@@ -1,11 +1,12 @@
 import { Link } from "gatsby"
 import React from "react"
+import Escudo from "./escudo"
 
 const Header = () => (
   <header>
     <nav>
       <div className="logo">
-        <img src="../images/escudo.jpg" alt="" />
+        <Escudo></Escudo>
         <div className="red-bar"></div>
       </div>
       <h1>

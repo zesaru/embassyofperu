@@ -16,17 +16,13 @@ nav {
 
 nav .logo {
   display: flex;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
-nav img {
-  height: 50px;
-}
 
 nav .red-bar {
   height: 50px;
   width: 3px;
-  margin: 0px 0px 0px 15px;
   background-color: #E00816;
 }
 
@@ -121,7 +117,7 @@ span {
         display: block;
         position: absolute;
         top: 100%;
-        padding: 1em;
+        padding: .5em;
         left: 0;
         right: 0;
         height: 100vh;
@@ -129,7 +125,7 @@ span {
 
         .menu__item {
           &:first-of-type a {
-            padding-top: 2em;
+            padding-top: 1em;
             border-radius: .5em .5em 0 0;
           }
 
