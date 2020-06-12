@@ -8,16 +8,16 @@ const Header = () => (
       <div className="logo">
         <Escudo></Escudo>
         <div className="red-bar"></div>
+        <h1>
+          EMBAJADA DEL PERÚ <span>EN JAPÓN</span>
+        </h1>
       </div>
-      <h1>
-        EMBAJADA DEL PERÚ<span>EN JAPÓN</span>
-      </h1>
       <div className="nav-language"></div>
       <div className="nav-social"></div>
       <input type="checkbox" id="menu" className="menu__checkbox" />
       <ul className="menu">
         <li className="menu__item">
-          <Link to="#">INICIO</Link>
+          <Link to="/">INICIO</Link>
         </li>
         <li className="menu__item">
           <Link to="#">EMBAJADOR</Link>

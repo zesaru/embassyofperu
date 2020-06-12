@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import Imagen from "../components/image"
+import Social from "../components/social"
 import Image from "gatsby-image"
 
 const Actividades = () => {
@@ -33,12 +34,13 @@ const Actividades = () => {
       <h1>Actividades del Embajador</h1>
       {data.allContentfulPosts.nodes.map(node => {
         return (
-          <div key={node.id}>
+          <div className="image_categories" key={node.id}>
             <p>{node.name}</p>
             <Image fluid={node.images[0].fluid} alt="" />
           </div>
         )
       })}
+      <Social></Social>
     </Layout>
   )
 }

@@ -9,6 +9,12 @@ export default function footer() {
         <p>Gobierno del Perú</p>
         <p>Ministerio de Comercio y Turismo</p>
       </div>
+      <div className="contacto">
+        <span>CONTACTO</span>
+        <p>Dirección: 150-0012 Tokio Shibuya-ku Hiroo 2-3-1</p>
+        <p>Teléfono: 03-3406-4243</p>
+        <p>Fax: 03-3409-7589</p>
+      </div>
     </footer>
   )
 }

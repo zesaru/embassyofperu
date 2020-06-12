@@ -2,12 +2,12 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const Escudo = () => {
+const Facebook = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "escudo.jpg" }) {
+      placeholderImage: file(relativePath: { eq: "facebook.png" }) {
         childImageSharp {
-          fixed(width: 44, height: 46) {
+          fixed(width: 55, height: 55) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -16,4 +16,4 @@ const Escudo = () => {
   `)
   return <Img fixed={data.placeholderImage.childImageSharp.fixed} />
 }
-export default Escudo
+export default Facebook
