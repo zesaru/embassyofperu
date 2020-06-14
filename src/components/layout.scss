@@ -15,34 +15,6 @@ body {
   margin: 0 auto;
 }
 
-nav .logo {
-  padding-top: 10px;
-  display: flex;
-}
-
-nav .red-bar {
-  height: 50px;
-  width: 3px;
-  background-color: #e00816;
-}
-
-h1 {
-  text-align: center;
-  margin: 2px;
-  font-size: 1.2rem;
-}
-
-nav {
-  display: flex;
-  align-items: initial;
-  justify-content: space-between;
-  position: relative;
-}
-
-nav ul {
-  display: flex;
-}
-
 .banner-section {
   z-index: -1;
 }
@@ -52,23 +24,19 @@ nav ul {
   padding: 0;
 }
 
-.secundary-menu-container ul li {
+.secundary-menu-container-item {
   list-style: none;
   border: solid 1px #707070;
   margin: 6px 0px;
 }
 
-.secundary-menu-container ul li a {
+.secundary-menu-container-item a {
   text-decoration: none;
   color: #707070;
   font-size: 24px;
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-
-.secundary-menu-container ul li a img {
-  padding: 4px 8px;
 }
 
 .image_categories {
@@ -120,9 +88,11 @@ footer {
   padding: 0;
   margin: 0;
 
+
+
   &__button {
-    margin: 2px;
-    padding: 11px 21px;
+    height: 50px;
+    width: 50px;
     background: url("../images/menu.svg") no-repeat center;
   }
 
@@ -131,8 +101,7 @@ footer {
 
     &:checked {
       &~.menu__button {
-
-        background: url("../images/icon-close.svg") no-repeat center;
+        background: url("../images/icon-close.svg") no-repeat center center;
       }
 
       &~.menu {
@@ -174,19 +143,18 @@ footer {
   }
 
 
-
-
   @media screen and (min-width: 1024px) {
     display: flex;
 
     &__button {
       display: none;
     }
+
   }
 }
 
 @media screen and (min-width: 426px) {
-  .secundary-menu-container {
+  .secundary-menu-container-item {
     display: flex;
     align-self: start;
   }
@@ -200,28 +168,55 @@ footer {
     justify-content: space-around;
   }
 
-  h1 span {
-    display: block;
-  }
 
-  .secundary-menu-container ul li {
+
+  .secundary-menu-container-item {
     display: inline-block;
     width: 44%;
     margin-left: 3%;
   }
 
-  @media screen and (min-width: 768px) {}
+  @media screen and (min-width: 768px) {
+    .secundary-menu-container-item {
+      display: inline-block;
+    }
+  }
 
   @media screen and (min-width: 1024px) {
 
-
-    .secundary-menu-container ul {
+    nav ul {
+      width: 70%;
       display: flex;
+      justify-content: flex-end;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      padding: 0px 10px;
+      color: slategrey;
+    }
+
+    nav ul li a:hover {
+      border-bottom: 2px solid red;
+    }
+
+    .secundary-menu-container-item {
+      display: inline-block;
+      width: 32%;
+      margin-left: 1%;
+    }
+
+    .icon {
+      display: none;
     }
 
     .wrapper {
       max-width: 84%;
-      margin: 0 auto;
+    }
+
+
+    .picture {
+      width: 100%;
     }
   }
 

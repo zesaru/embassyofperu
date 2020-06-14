@@ -30,17 +30,19 @@ const Actividades = () => {
   `)
   return (
     <Layout>
-      <Imagen></Imagen>
-      <h1>Actividades del Embajador</h1>
-      {data.allContentfulPosts.nodes.map(node => {
-        return (
-          <div className="image_categories" key={node.id}>
-            <p>{node.name}</p>
-            <Image fluid={node.images[0].fluid} alt="" />
-          </div>
-        )
-      })}
-      <Social></Social>
+      <div className="wrapper">
+        <Imagen></Imagen>
+        <h1>Actividades del Embajador</h1>
+        {data.allContentfulPosts.nodes.map(node => {
+          return (
+            <div className="image_categories" key={node.id}>
+              <p>{node.name}</p>
+              <Image fluid={node.images[0].fluid} alt="" />
+            </div>
+          )
+        })}
+        <Social></Social>
+      </div>
     </Layout>
   )
 }

@@ -1,19 +1,25 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import "./escudo.scss"
 
 const Escudo = () => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "escudo.jpg" }) {
         childImageSharp {
-          fixed(width: 44, height: 46) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 50) {
+            ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
     }
   `)
-  return <Img fixed={data.placeholderImage.childImageSharp.fixed} />
+  return (
+    <Img
+      className="escudo"
+      fluid={data.placeholderImage.childImageSharp.fluid}
+    />
+  )
 }
 export default Escudo
