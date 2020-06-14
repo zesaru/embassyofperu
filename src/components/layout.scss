@@ -5,6 +5,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.wrapper {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
 .container {
   max-width: 95%;
   margin: 0 auto;
@@ -206,5 +211,18 @@ footer {
   }
 
   @media screen and (min-width: 768px) {}
+
+  @media screen and (min-width: 1024px) {
+
+
+    .secundary-menu-container ul {
+      display: flex;
+    }
+
+    .wrapper {
+      max-width: 84%;
+      margin: 0 auto;
+    }
+  }
 
 }
