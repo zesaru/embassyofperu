@@ -17,10 +17,7 @@ const IndexPage = () => {
             slug
             picture {
               fluid(maxWidth: 400) {
-                base64
-                tracedSVG
-                srcWebp
-                srcSetWebp
+                ...GatsbyContentfulFluid
               }
             }
             imageCategory {
@@ -38,31 +35,26 @@ const IndexPage = () => {
       <div className="wrapper">
         <Imagen></Imagen>
         <section className="secundary-menu-container">
-          <ul>
-            {data.allContentfulCategories.edges.map(edge => {
-              return (
-                <li key={edge.node.id}>
-                  <Link to={edge.node.slug}>
-                    <img
-                      className="icon"
-                      height="55px"
-                      src={edge.node.imageCategory.file.url}
-                      alt={edge.node.name}
-                    />
-                    <span> {edge.node.name}</span>
-                    {edge.node.picture === null ? (
-                      console.log("nulo")
-                    ) : (
-                      <Img
-                        className="picture"
-                        fluid={edge.node.picture.fluid}
-                      />
-                    )}
-                  </Link>
-                </li>
-              )
-            })}
-          </ul>
+          {data.allContentfulCategories.edges.map(edge => {
+            return (
+              <div className="secundary-menu-container-item" key={edge.node.id}>
+                <Link to={edge.node.slug}>
+                  <img
+                    className="icon"
+                    height="55px"
+                    src={edge.node.imageCategory.file.url}
+                    alt={edge.node.name}
+                  />
+                  <span> {edge.node.name}</span>
+                  {edge.node.picture === null ? (
+                    console.log("nulo")
+                  ) : (
+                    <Img className="picture" fluid={edge.node.picture.fluid} />
+                  )}
+                </Link>
+              </div>
+            )
+          })}
         </section>
         <Social></Social>
       </div>
