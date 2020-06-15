@@ -39,6 +39,11 @@ body {
   flex-direction: column;
 }
 
+.secundary-menu-container-item a span {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
 .image_categories {
   margin: 20px;
   padding-bottom: 10px;
