@@ -41,7 +41,6 @@ const IndexPage = () => {
                 <Link to={edge.node.slug}>
                   <img
                     className="icon"
-                    height="55px"
                     src={edge.node.imageCategory.file.url}
                     alt={edge.node.name}
                   />
