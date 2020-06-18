@@ -3,7 +3,7 @@ import "./footer.scss"
 
 export default function footer() {
   return (
-    <footer>
+    <footer className="wrapper">
       <div className="enlacesdeinteres">
         <h4>ENLACES DE INTERES</h4>
         <div className="footer-enlaces">

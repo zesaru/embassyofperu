@@ -168,7 +168,7 @@ body {
     }
 
     nav h1 {
-      margin-left: -140px;
+      margin-left: -110px;
     }
 
     nav .escudo {
@@ -178,6 +178,10 @@ body {
   }
 
   @media screen and (min-width: 1024px) {
+
+    nav h1 {
+      margin-left: -16px;
+    }
 
     nav ul {
       width: 70%;
@@ -212,7 +216,7 @@ body {
 
     .secundary-menu-container-item a span {
       text-transform: uppercase;
-      padding: 16px;
+      padding: 12px;
     }
 
     .icon {
