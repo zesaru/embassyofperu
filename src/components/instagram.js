@@ -15,7 +15,7 @@ const Instagram = () => {
     }
   `)
   return (
-    <Link to="https://www.instagram.com/peruinjapan/">
+    <Link target="_blank" to="https://www.instagram.com/peruinjapan/">
       <Img fixed={data.placeholderImage.childImageSharp.fixed} />
     </Link>
   )

@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
 const Facebook = () => {
@@ -14,6 +14,10 @@ const Facebook = () => {
       }
     }
   `)
-  return <Img fixed={data.placeholderImage.childImageSharp.fixed} />
+  return (
+    <Link target="_blank" to="https://www.facebook.com/embajadadelperuenjapon">
+      <Img fixed={data.placeholderImage.childImageSharp.fixed} />
+    </Link>
+  )
 }
 export default Facebook

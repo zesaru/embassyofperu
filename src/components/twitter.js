@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
 const Twitter = () => {
@@ -14,6 +14,10 @@ const Twitter = () => {
       }
     }
   `)
-  return <Img fixed={data.placeholderImage.childImageSharp.fixed} />
+  return (
+    <Link target="_blank" to="https://twitter.com/peruinjapan">
+      <Img fixed={data.placeholderImage.childImageSharp.fixed} />
+    </Link>
+  )
 }
 export default Twitter
