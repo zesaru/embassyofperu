@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-import Imagen from "../components/image"
 
 const embajador = () => {
   return (

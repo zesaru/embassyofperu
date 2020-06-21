@@ -22,10 +22,10 @@ const Header = () => (
             <Link to="/embajador">EMBAJADOR</Link>
           </li>
           <li className="menu__item">
-            <Link to="#">FUNCIONARIOS</Link>
+            <Link to="/funcionarios">FUNCIONARIOS</Link>
           </li>
           <li className="menu__item">
-            <Link to="#">HISTORIA</Link>
+            <Link to="amistad">AMISTAD PERÚ-JAPÓN</Link>
           </li>
         </ul>
         <label htmlFor="menu" className="menu__button"></label>
