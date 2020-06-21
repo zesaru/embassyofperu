@@ -1,11 +1,23 @@
 .contacto,
-.intituciones {
+.instituciones {
   display: none;
 }
 
 .footer-enlaces {
   padding: 5px 7px 4px 0px;
   border-left: solid 4px #e00816;
+}
+
+.footer-level1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-level2 {
+  text-align: center;
+  padding: 10px 0;
+  background-color: rgb(20, 18, 18);
+  font-size: 14px;
 }
 
 h5 {
@@ -18,13 +30,13 @@ h4 {
   font-weight: 300;
   padding-left: 8px;
   margin: 4px;
+  font-size: 14px;
 }
 
 footer {
   background-color: #4d4949;
   color: white;
   padding-top: 10px;
-  padding-left: 8px;
 }
 
 .footer-title {
@@ -40,7 +52,15 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
-  .intituciones {
+  .instituciones {
     display: initial;
   }
+
+  .contacto,
+  .instituciones,
+  .enlacesdeinteres {
+    width: 31%;
+    padding-left: 10px;
+  }
+
 }
