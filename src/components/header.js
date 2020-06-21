@@ -13,7 +13,13 @@ const Header = () => (
         </h1>
         <div className="nav-language"></div>
         <div className="nav-social"></div>
-        <input type="checkbox" id="menu" className="menu__checkbox" />
+        <input
+          type="checkbox"
+          id="menu"
+          name="menu"
+          className="menu__checkbox"
+        />
+        <label htmlFor="menu" className="menu__button"></label>
         <ul className="menu">
           <li className="menu__item">
             <Link to="/">INICIO</Link>
@@ -28,7 +34,6 @@ const Header = () => (
             <Link to="amistad">AMISTAD PERÚ-JAPÓN</Link>
           </li>
         </ul>
-        <label htmlFor="menu" className="menu__button"></label>
       </nav>
     </div>
   </header>
