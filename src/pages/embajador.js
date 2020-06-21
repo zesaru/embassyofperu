@@ -5,7 +5,6 @@ import Imagen from "../components/image"
 const embajador = () => {
   return (
     <Layout>
-      <Imagen></Imagen>
       <div className="wrapper">
         <h2>HAROLD FORSYTH</h2>
         <h3>Embajador del Perú en Japón</h3>
@@ -54,18 +53,20 @@ const embajador = () => {
           Latinoamericano (SELA) (1982 – 1984) <br />
         </p>
         Primer Secretario, Jefe de Evaluación y Control de la Academia
-        Diplomática del Perú (1984 – 1985) Subdirector de Cooperación
-        Latinoamericana del Ministerio de Relaciones Exteriores del Perú (1986)
-        Consejero de la Embajada del Perú en Canadá (1987-1989)
+        Diplomática del Perú (1984 – 1985) <br />
+        Subdirector de Cooperación Latinoamericana del Ministerio de Relaciones
+        Exteriores del Perú (1986) Consejero de la Embajada del Perú en Canadá
+        (1987-1989) <br />
         Ministro-Consejero de la Embajada del Perú en la República Federal de
-        Alemania (1990–1992) Miembro Fundador del Foro Democrático y de la
-        Asociación Civil de Verificación Electoral “Transparencia” Observador
-        Internacional de las elecciones de Colombia (mayo 1994), México (agosto
-        1994), Guatemala (noviembre 1995), Nicaragua (octubre 1996), Colombia
-        (1998), Estados Unidos de Norteamérica (noviembre 2016). Elegido
-        Congresista de la República del Perú 1995 – 2000 (votación popular)
-        Miembro de la Comisión de Defensa, Orden Interno e Inteligencia del
-        Congreso de la República (1995–2000) Miembro de la Comisión de
+        Alemania (1990–1992) <br />
+        Miembro Fundador del Foro Democrático y de la Asociación Civil de
+        Verificación Electoral “Transparencia” Observador Internacional de las
+        elecciones de Colombia (mayo 1994), México (agosto 1994), Guatemala
+        (noviembre 1995), Nicaragua (octubre 1996), Colombia (1998), Estados
+        Unidos de Norteamérica (noviembre 2016). <br />
+        Elegido Congresista de la República del Perú 1995 – 2000 (votación
+        popular) Miembro de la Comisión de Defensa, Orden Interno e Inteligencia
+        del Congreso de la República (1995–2000) Miembro de la Comisión de
         Relaciones Exteriores del Congreso de la República (1995-2000) Consultor
         de la Secretaría General de la Comunidad Andina de Naciones (2000-2001)
         Embajador en el Servicio Diplomático de la República del Perú Embajador
@@ -73,26 +74,28 @@ const embajador = () => {
         (2004-2006) Representante Permanente del Perú ante los Organismos
         Internacionales con sede en Roma: FAO, FIDA y PMA (2004-2006)
         Viceministro Secretario General de Relaciones Exteriores (2006) Asesor
-        de la Alta Dirección del Ministerio de Relaciones Exteriores (2006-2009)
+        de la Alta Dirección del Ministerio de Relaciones Exteriores (2006-2009){" "}
+        <br />
         Embajador del Perú en la República Popular China (1 de agosto de 2009
-        hasta el 26 de agosto de 2011) Embajador del Perú en los Estados Unidos
-        de América (2011-2015) Consultor de la Organización de los Estados
-        Americanos OEA (2015) Director Ejecutivo del Plan Binacional de
-        Desarrollo de la Región Fronteriza Perú – Ecuador, Capitulo Perú (a
-        partir del 25 de mayo de 2015 – marzo 2017) Embajador del Perú en Japón
-        (Desde abril de 2017 a la fecha) Instituciones a las que pertenece:
-        Colegio de Periodistas del Perú (No. 1911 de la Orden) Asociación de
-        Funcionarios del Servicio Diplomático del Perú Sociedad Fundadores de la
-        Independencia, Vencedores el 2 de mayo de 1866 y Defensores Calificados
-        de la Patria Sociedad Bolivariana de Colombia Instituto Sanmartiniano
-        del Perú Club de Regatas “Lima” Club Alianza Lima Phoenix Club (Lima)
-        Periodismo: Comentarista del Semanario “Caretas” (1993 hasta la
-        actualidad) Colaborador del diario “El Comercio” (1996–2004) Conductor
-        del Programa Radial “Convocatoria”, CPN Radio (1996) y 1160FM (2000)
-        Conductor del Programa Televisivo “Pulso Electoral” Red Global TV (2001)
-        Conductor del Programa Televisivo “Vox Pópuli” RBC TV (2008-2009)
-        Director de Le Monde Diplomatique (edición peruana) (2007-2009) Libros:
-        Autor de “Conversaciones con Javier Pérez de Cuéllar” (2001) Autor de
+        hasta el 26 de agosto de 2011) <br />
+        Embajador del Perú en los Estados Unidos de América (2011-2015) <br />{" "}
+        Consultor de la Organización de los Estados Americanos OEA (2015)
+        Director Ejecutivo del Plan Binacional de Desarrollo de la Región
+        Fronteriza Perú – Ecuador, Capitulo Perú (a partir del 25 de mayo de
+        2015 – marzo 2017) Embajador del Perú en Japón (Desde abril de 2017 a la
+        fecha) Instituciones a las que pertenece: Colegio de Periodistas del
+        Perú (No. 1911 de la Orden) Asociación de Funcionarios del Servicio
+        Diplomático del Perú Sociedad Fundadores de la Independencia, Vencedores
+        el 2 de mayo de 1866 y Defensores Calificados de la Patria Sociedad
+        Bolivariana de Colombia Instituto Sanmartiniano del Perú Club de Regatas
+        “Lima” Club Alianza Lima Phoenix Club (Lima) Periodismo: Comentarista
+        del Semanario “Caretas” (1993 hasta la actualidad) Colaborador del
+        diario “El Comercio” (1996–2004) Conductor del Programa Radial
+        “Convocatoria”, CPN Radio (1996) y 1160FM (2000) Conductor del Programa
+        Televisivo “Pulso Electoral” Red Global TV (2001) Conductor del Programa
+        Televisivo “Vox Pópuli” RBC TV (2008-2009) Director de Le Monde
+        Diplomatique (edición peruana) (2007-2009) Libros: Autor de
+        “Conversaciones con Javier Pérez de Cuéllar” (2001) Autor de
         “Conversaciones con Luis Bedoya Reyes” (editorial Planeta) (2016) Autor
         de “Reto Diplomático“ (editorial USIL) (2017) Condecoraciones: Orden
         Francisco de Miranda, Tercera Clase (1973 - Venezuela) Orden de Río

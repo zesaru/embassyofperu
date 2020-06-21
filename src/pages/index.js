@@ -9,12 +9,13 @@ import "./index.scss"
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulCategories(sort: { fields: name }) {
+      allContentfulCategories(sort: { fields: order }) {
         edges {
           node {
             id
             name
             slug
+            order
             picture {
               fluid(maxWidth: 400) {
                 ...GatsbyContentfulFluid
