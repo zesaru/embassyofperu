@@ -170,4 +170,23 @@
     box-sizing: border-box;
     padding: 0 20px;
   }
+
+  .slider-wrapper {
+    height: 45vh;
+  }
+
+  .slide {
+    height: 45vh;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+
+  .slider-wrapper {
+    height: 65vh;
+  }
+
+  .slide {
+    height: 65vh;
+  }
 }
