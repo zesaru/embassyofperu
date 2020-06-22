@@ -1,9 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
+import Banners from "../components/banner"
 
 const embajador = () => {
   return (
     <Layout>
+      <Banners></Banners>
       <div className="wrapper">
         <h2>HAROLD FORSYTH</h2>
         <h3>Embajador del Perú en Japón</h3>
