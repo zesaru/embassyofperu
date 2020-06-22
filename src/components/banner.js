@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Slider from "react-animated-slider"
 import "react-animated-slider/build/horizontal.css"
+import "./banner.scss"
 
 const Banner = () => {
   const data = useStaticQuery(graphql`
@@ -24,7 +25,6 @@ const Banner = () => {
       }
     }
   `)
-  console.log(data.allContentfulBanners.edges[0].node.image.fluid.src)
   return (
     <Slider className="slider-wrapper">
       {data.allContentfulBanners.edges.map(edge => {
