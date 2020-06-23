@@ -16,7 +16,7 @@ const Banner = () => {
               file {
                 url
               }
-              fluid(maxWidth: 1000) {
+              fluid(maxWidth: 1400) {
                 ...GatsbyContentfulFluid
               }
             }
