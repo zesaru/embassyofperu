@@ -31,7 +31,7 @@ const Header = () => (
             <Link to="/funcionarios">FUNCIONARIOS</Link>
           </li>
           <li className="menu__item">
-            <Link to="amistad">AMISTAD PERÚ-JAPÓN</Link>
+            <Link to="/amistad">AMISTAD PERÚ-JAPÓN</Link>
           </li>
         </ul>
       </nav>
