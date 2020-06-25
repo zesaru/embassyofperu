@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
-import Imagen from "../components/image"
+import Banner from "../components/banner"
 import Social from "../components/social"
 import Image from "gatsby-image"
 import "./actividades.scss"
@@ -32,13 +32,15 @@ const Actividades = () => {
   return (
     <Layout>
       <div className="wrapper">
-        <Imagen></Imagen>
-        <div className="content">
-          <h1>Actividades del Embajador</h1>
+        <Banner></Banner>
+        <h2>Actividades de la Embajada</h2>
+        <div className="content_item">
           {data.allContentfulPosts.nodes.map(node => {
             return (
               <div className="image_categories" key={node.id}>
-                <p>{node.name}</p>
+                <div className="content_title">
+                  <p>{node.name}</p>
+                </div>
                 <Image fluid={node.images[0].fluid} alt="" />
               </div>
             )

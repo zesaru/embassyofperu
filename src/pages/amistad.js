@@ -1,10 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
+import Banner from "../components/banner"
 
 const amistad = () => {
   return (
     <Layout>
       <div className="wrapper">
+        <Banner></Banner>
         <h2>Amistad Perú-Japón</h2>
         <p>
           El Perú fue el primer país latinoamericano y el decimocuarto del mundo
