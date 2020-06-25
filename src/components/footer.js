@@ -43,16 +43,61 @@ export default function footer() {
         <div className="contacto">
           <h4>ENLACES DE INVERSIÓN Y TURISMO</h4>
           <div className="footer-enlaces">
-            <h5>Promoción de la Inversión Privada - PROINVERSIÓN</h5>
-            <h5>Comisión de Promoción del Perú - PROMPERÚ</h5>
-            <h5>PERÚTRAVEL</h5>
+            <h5>
+              <a
+                className="footer-enlace"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.proinversion.gob.pe/"
+              >
+                Promoción de la Inversión Privada - PROINVERSIÓN
+              </a>
+            </h5>
+            <h5>
+              <a
+                className="footer-enlace"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.promperu.gob.pe/"
+              >
+                Comisión de Promoción del Perú - PROMPERÚ
+              </a>
+            </h5>
+            <h5>
+              <a
+                className="footer-enlace"
+                target="_blank"
+                rel="noreferrer"
+                href="https://peru.travel/"
+              >
+                PERÚTRAVEL
+              </a>
+            </h5>
           </div>
         </div>
         <div className="instituciones">
           <h4>INSTITUCIONES DEL PERÚ EN JAPÓN</h4>
           <div className="footer-enlaces">
-            <h5>Consulado General del Peru en Tokio</h5>
-            <h5>Consulado General del Peru en Nagoya</h5>
+            <h5>
+              <a
+                className="footer-enlace"
+                target="_blank"
+                rel="noreferrer"
+                href="http://www.consulado.pe/es/tokio/Paginas/Inicio.aspx"
+              >
+                Consulado General del Peru en Tokio
+              </a>
+            </h5>
+            <h5>
+              <a
+                className="footer-enlace"
+                target="_blank"
+                rel="noreferrer"
+                href="http://www.consulado.pe/es/nagoya/Paginas/Inicio.aspx"
+              >
+                Consulado General del Peru en Nagoya
+              </a>
+            </h5>
             <h5>Sección Comercial de la Embajada </h5>
           </div>
         </div>
