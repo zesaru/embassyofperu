@@ -8,9 +8,36 @@ export default function footer() {
         <div className="enlacesdeinteres">
           <h4>ENLACES DE INTERES</h4>
           <div className="footer-enlaces">
-            <h5>Ministerio de Relaciones Exteriores</h5>
-            <h5>Gobierno del Perú</h5>
-            <h5>Superintendencia Nacional de Migraciones</h5>
+            <h5>
+              <a
+                className="footer-enlace"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.gob.pe/rree"
+              >
+                Ministerio de Relaciones Exteriores
+              </a>
+            </h5>
+            <h5>
+              <a
+                className="footer-enlace"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.gob.pe/"
+              >
+                Gobierno del Perú
+              </a>
+            </h5>
+            <h5>
+              <a
+                className="footer-enlace"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.migraciones.gob.pe/"
+              >
+                Superintendencia Nacional de Migraciones
+              </a>
+            </h5>
           </div>
         </div>
         <div className="contacto">

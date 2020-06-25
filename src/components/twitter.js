@@ -15,12 +15,7 @@ const Twitter = () => {
     }
   `)
   return (
-    <a
-      target="_blank"
-      without
-      rel="noreferrer"
-      href="https://twitter.com/peruinjapan"
-    >
+    <a target="_blank" rel="noreferrer" href="https://twitter.com/peruinjapan">
       <Img fixed={data.placeholderImage.childImageSharp.fixed} />
     </a>
   )

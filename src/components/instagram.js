@@ -17,7 +17,6 @@ const Instagram = () => {
   return (
     <a
       target="_blank"
-      without
       rel="noreferrer"
       href="https://www.instagram.com/peruinjapan/"
     >
