@@ -47,7 +47,7 @@ const IndexPage = () => {
                   />
                   <span> {edge.node.name}</span>
                   {edge.node.picture === null ? (
-                    console.log("nulo")
+                    console.log("")
                   ) : (
                     <Img className="picture" fluid={edge.node.picture.fluid} />
                   )}

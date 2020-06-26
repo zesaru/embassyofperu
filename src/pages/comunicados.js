@@ -6,10 +6,10 @@ import Social from "../components/social"
 import Image from "gatsby-image"
 import "./actividades.scss"
 
-const Actividades = () => {
+const Comunicados = () => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulPosts (filter: {categoryId: {slug: {eq: "actividades"}}}){
+      allContentfulPosts (filter: {categoryId: {slug: {eq: "comunicados"}}}){
         nodes {
           categoryId {
             name
@@ -33,7 +33,7 @@ const Actividades = () => {
     <Layout>
       <div className="wrapper">
         <Banner></Banner>
-        <h2>Actividades de la Embajada</h2>
+        <h2>Comunicados</h2>
         <div className="content_item">
           {data.allContentfulPosts.nodes.map(node => {
             return (
@@ -52,4 +52,4 @@ const Actividades = () => {
   )
 }
 
-export default Actividades
+export default Comunicados;
