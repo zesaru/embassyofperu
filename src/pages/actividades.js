@@ -8,7 +8,9 @@ import "./actividades.scss"
 const Actividades = () => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulPosts (filter: {categoryId: {slug: {eq: "actividades"}}}){
+      allContentfulPosts(
+        filter: { categoryId: { slug: { eq: "actividades" } } }
+      ) {
         nodes {
           categoryId {
             name
@@ -36,14 +38,14 @@ const Actividades = () => {
         <div className="content">
           {data.allContentfulPosts.nodes.map(node => {
             return (
-          <div className="content_item">
-              <div className="image_categories" key={node.id}>
-                <div className="content_title">
-                  <p>{node.name}</p>
+              <div className="content_item">
+                <div className="image_categories" key={node.id}>
+                  <div className="content_title">
+                    <p>{node.name}</p>
+                  </div>
+                  <Image fluid={node.images[0].fluid} alt="" />
                 </div>
-                <Image fluid={node.images[0].fluid} alt="" />
               </div>
-          </div>    
             )
           })}
         </div>
