@@ -1,3 +1,7 @@
+.content_item a {
+  text-decoration: none;
+}
+
 @media screen and (min-width: 768px) {
   .content_title {
     height: 52px;
@@ -6,7 +10,7 @@
   .content_item {
     display: inline-block;
     width: 44.6%;
-    justify-content:space-around;
+    justify-content: space-around;
   }
 }
 

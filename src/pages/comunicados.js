@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 import Layout from "../components/layout"
 import Banner from "../components/banner"
 import Image from "gatsby-image"
@@ -8,7 +8,9 @@ import "./actividades.scss"
 const Comunicados = () => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulPosts (filter: {categoryId: {slug: {eq: "comunicados"}}}){
+      allContentfulPosts(
+        filter: { categoryId: { slug: { eq: "comunicados" } } }
+      ) {
         nodes {
           categoryId {
             name
@@ -16,6 +18,7 @@ const Comunicados = () => {
           }
           id
           name
+          slug
           images {
             file {
               url
@@ -36,14 +39,16 @@ const Comunicados = () => {
         <div className="content">
           {data.allContentfulPosts.nodes.map(node => {
             return (
-            <div className="content_item" key={node.id}>
-              <div className="image_categories "key={node.id} >
-                <div className="content_title" key={node.id}>
-                  <p>{node.name}</p>
-                </div>
-                <Image fluid={node.images[0].fluid} alt="" />
+              <div className="content_item" key={node.id}>
+                <Link to={`/${node.slug}`}>
+                  <div className="image_categories" key={node.id}>
+                    <div className="content_title" key={node.id}>
+                      <p>{node.name}</p>
+                    </div>
+                    <Image fluid={node.images[0].fluid} alt="" />
+                  </div>
+                </Link>
               </div>
-            </div>  
             )
           })}
         </div>
@@ -52,4 +57,4 @@ const Comunicados = () => {
   )
 }
 
-export default Comunicados;
+export default Comunicados

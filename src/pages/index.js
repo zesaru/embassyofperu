@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
-import Social from "../components/social"
 import Img from "gatsby-image"
 import Banners from "../components/banner"
 import "./index.scss"
