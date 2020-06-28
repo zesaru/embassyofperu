@@ -2,14 +2,13 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import Banner from "../components/banner"
-import Social from "../components/social"
 import Image from "gatsby-image"
 import "./actividades.scss"
 
 const Cultura = () => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulPosts (filter: {categoryId: {slug: {eq: "cultura"}}}){
+      allContentfulPosts(filter: { categoryId: { slug: { eq: "cultura" } } }) {
         nodes {
           categoryId {
             name
@@ -46,10 +45,9 @@ const Cultura = () => {
             )
           })}
         </div>
-        <Social></Social>
       </div>
     </Layout>
   )
 }
 
-export default Cultura;
+export default Cultura

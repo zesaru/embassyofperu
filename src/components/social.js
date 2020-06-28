@@ -6,7 +6,7 @@ import "./social.scss"
 
 const Social = () => {
   return (
-    <div className="social">
+    <div className="social wrapper">
       <Facebook />
       <Twitter />
       <Instagram />

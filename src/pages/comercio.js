@@ -2,7 +2,6 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import Banner from "../components/banner"
-import Social from "../components/social"
 import Image from "gatsby-image"
 import "./actividades.scss"
 
@@ -15,7 +14,6 @@ const Comercio = () => {
         <div className="content_item">
 
         </div>
-        <Social></Social>
       </div>
     </Layout>
     );

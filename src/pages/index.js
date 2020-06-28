@@ -56,7 +56,6 @@ const IndexPage = () => {
             )
           })}
         </section>
-        <Social></Social>
       </div>
     </Layout>
   )
