@@ -1,27 +1,19 @@
 @media screen and (min-width: 768px) {
-  .content_item {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .image_categories {
-    width: 43%;
-    height: 190px;
-    overflow: hidden;
-  }
-
   .content_title {
     height: 52px;
+  }
+
+  .content_item {
+    display: inline-block;
+    width: 44.6%;
+    justify-content:space-around;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .image_categories {
-    width: 48%;
-    height: 90%;
-  }
-
-  .content_title {
-    height: 40px;
+  .content_item {
+    display: inline-block;
+    width: 31.6%;
+    margin-left: 1%;
   }
 }
