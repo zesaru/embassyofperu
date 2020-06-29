@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 import Layout from "../components/layout"
 import Banner from "../components/banner"
 import Image from "gatsby-image"
@@ -18,11 +18,12 @@ const Actividades = () => {
           }
           id
           name
+          slug
           images {
             file {
               url
             }
-            fluid(maxWidth: 250) {
+            fluid(maxWidth: 500) {
               ...GatsbyContentfulFluid_withWebp
             }
           }
@@ -38,13 +39,15 @@ const Actividades = () => {
         <div className="content">
           {data.allContentfulPosts.nodes.map(node => {
             return (
-              <div className="content_item">
-                <div className="image_categories" key={node.id}>
-                  <div className="content_title">
-                    <p>{node.name}</p>
+              <div className="content_item" key={node.id}>
+                <Link to={`/${node.slug}`}>
+                  <div className="image_categories" key={node.id}>
+                    <div className="content_title">
+                      <p>{node.name}</p>
+                    </div>
+                    <Image fluid={node.images[0].fluid} alt="" />
                   </div>
-                  <Image fluid={node.images[0].fluid} alt="" />
-                </div>
+                </Link>
               </div>
             )
           })}

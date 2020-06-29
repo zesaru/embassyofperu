@@ -23,7 +23,7 @@ const Comunicados = () => {
             file {
               url
             }
-            fluid(maxWidth: 250) {
+            fluid(maxWidth: 500) {
               ...GatsbyContentfulFluid_withWebp
             }
           }

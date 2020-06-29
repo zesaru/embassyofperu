@@ -16,6 +16,12 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: process.env.USERNAME,
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {

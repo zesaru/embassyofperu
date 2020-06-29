@@ -16,7 +16,7 @@ const IndexPage = () => {
             slug
             order
             picture {
-              fluid(maxWidth: 400) {
+              fluid(maxWidth: 500) {
                 ...GatsbyContentfulFluid
               }
             }
