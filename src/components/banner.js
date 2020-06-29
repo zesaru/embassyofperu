@@ -7,7 +7,7 @@ import "./banner.scss"
 const Banner = () => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulBanners(sort: { fields: name }) {
+      allContentfulBanners(sort: { fields: order }) {
         edges {
           node {
             id
