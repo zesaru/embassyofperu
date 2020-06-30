@@ -4,6 +4,10 @@
   margin: 0 0 1.5em;
 }
 
+aside {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .wrapper aside {
     width: 32%;
@@ -12,7 +16,21 @@
   .content_post {
     width: 65%;
   }
+
+  aside {
+    display: inline-block;
+  }
 }
 
+
+
 @media screen and (min-width: 1024px) {
+  .post {
+    display: flex;
+  }
+
+  .content_post {
+    padding-top: 21px;
+  }
+
 }
