@@ -10,6 +10,7 @@ const Actividades = () => {
     query {
       allContentfulPosts(
         filter: { categoryId: { slug: { eq: "actividades" } } }
+        sort: { fields: datePost, order: DESC }
       ) {
         nodes {
           categoryId {
@@ -23,7 +24,7 @@ const Actividades = () => {
             file {
               url
             }
-            fluid(maxWidth: 500) {
+            fluid(maxWidth: 800) {
               ...GatsbyContentfulFluid_withWebp
             }
           }

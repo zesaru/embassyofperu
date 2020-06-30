@@ -83,7 +83,7 @@ export default function footer() {
                 className="footer-enlace"
                 target="_blank"
                 rel="noreferrer"
-                href="http://www.consulado.pe/es/tokio/Paginas/Inicio.aspx"
+                href="https://www.consulado.pe/es/tokio/Paginas/Inicio.aspx"
               >
                 Consulado General del Peru en Tokio
               </a>
@@ -93,7 +93,7 @@ export default function footer() {
                 className="footer-enlace"
                 target="_blank"
                 rel="noreferrer"
-                href="http://www.consulado.pe/es/nagoya/Paginas/Inicio.aspx"
+                href="https://www.consulado.pe/es/nagoya/Paginas/Inicio.aspx"
               >
                 Consulado General del Peru en Nagoya
               </a>

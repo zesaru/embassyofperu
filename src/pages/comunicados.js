@@ -10,6 +10,7 @@ const Comunicados = () => {
     query {
       allContentfulPosts(
         filter: { categoryId: { slug: { eq: "comunicados" } } }
+        sort: { fields: datePost, order: DESC }
       ) {
         nodes {
           categoryId {
@@ -23,7 +24,7 @@ const Comunicados = () => {
             file {
               url
             }
-            fluid(maxWidth: 500) {
+            fluid(maxWidth: 800) {
               ...GatsbyContentfulFluid_withWebp
             }
           }
