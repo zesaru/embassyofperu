@@ -24,7 +24,7 @@ const Comunicados = () => {
             file {
               url
             }
-            fluid(maxWidth: 800) {
+            fluid(maxWidth: 900) {
               ...GatsbyContentfulFluid_withWebp
             }
           }
@@ -46,7 +46,7 @@ const Comunicados = () => {
                     <div className="content_title" key={node.id}>
                       <p>{node.name}</p>
                     </div>
-                    <Image fluid={node.images[0].fluid} alt="" />
+                    <Image fluid={node.images[0].fluid} alt={node.name} />
                   </div>
                 </Link>
               </div>
