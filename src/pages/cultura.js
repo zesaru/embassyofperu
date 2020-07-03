@@ -36,7 +36,7 @@ const Comunicados = () => {
     <Layout>
       <div className="wrapper">
         <Banner></Banner>
-        <h2>Comercio</h2>
+        <h2>Cultura</h2>
         <div className="content">
           {data.allContentfulPosts.nodes.map(node => {
             return (
