@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import "./escudo.scss"
 
@@ -16,10 +16,12 @@ const Escudo = () => {
     }
   `)
   return (
-    <Img
-      className="escudo"
-      fluid={data.placeholderImage.childImageSharp.fluid}
-    />
+    <Link to="/">
+      <Img
+        className="escudo"
+        fluid={data.placeholderImage.childImageSharp.fluid}
+      />
+    </Link>
   )
 }
 export default Escudo

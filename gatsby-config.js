@@ -7,6 +7,7 @@ module.exports = {
     title: `Embassy of Peru`,
     description: `This is the oficial Web of the Embassy.`,
     author: `@zesarum`,
+    url: `www.embajadadelperuenjapon.org`,
   },
   plugins: [
     {

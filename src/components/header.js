@@ -8,9 +8,11 @@ const Header = () => (
     <div className="wrapper">
       <nav>
         <Escudo></Escudo>
-        <h1>
-          EMBAJADA DEL PERÚ <span>EN JAPÓN</span>
-        </h1>
+        <Link to="/">
+          <h1>
+            EMBAJADA DEL PERÚ <span>EN JAPÓN</span>
+          </h1>
+        </Link>
         <div className="nav-language"></div>
         <div className="nav-social"></div>
         <input
