@@ -18,6 +18,7 @@ const Escudo = () => {
   return (
     <Link to="/">
       <Img
+        alt="escudo logo peru"
         className="escudo"
         fluid={data.placeholderImage.childImageSharp.fluid}
       />

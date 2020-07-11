@@ -20,7 +20,10 @@ const Instagram = () => {
       rel="noreferrer"
       href="https://www.instagram.com/peruinjapan/"
     >
-      <Img fixed={data.placeholderImage.childImageSharp.fixed} />
+      <Img
+        fixed={data.placeholderImage.childImageSharp.fixed}
+        alt="instagram logo"
+      />
     </a>
   )
 }
