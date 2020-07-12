@@ -20,7 +20,10 @@ const Facebook = () => {
       rel="noreferrer"
       href="https://www.facebook.com/embajadadelperuenjapon"
     >
-      <Img fixed={data.placeholderImage.childImageSharp.fixed} />
+      <Img
+        fixed={data.placeholderImage.childImageSharp.fixed}
+        alt="facebook logo"
+      />
     </a>
   )
 }
