@@ -91,7 +91,11 @@ const IndexPage = () => {
                   {edge.node.picture === null ? (
                     console.log("")
                   ) : (
-                    <Img className="picture" fluid={edge.node.picture.fluid} />
+                    <Img
+                      className="picture"
+                      fluid={edge.node.picture.fluid}
+                      alt={edge.node.name}
+                    />
                   )}
                 </Link>
               </div>

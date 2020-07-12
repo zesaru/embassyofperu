@@ -46,7 +46,7 @@ const Actividades = () => {
                     <div className="content_title">
                       <p>{node.name}</p>
                     </div>
-                    <Image fluid={node.images[0].fluid} alt="" />
+                    <Image fluid={node.images[0].fluid} alt={node.name} />
                   </div>
                 </Link>
               </div>

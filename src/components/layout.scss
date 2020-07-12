@@ -20,6 +20,10 @@ body {
   width: 100%;
 }
 
+.secundary-menu-container {
+  padding: 10px 0px;
+}
+
 .secundary-menu-container ul {
   margin: 0;
   padding: 0;
@@ -39,9 +43,7 @@ body {
   align-items: center;
 }
 
-.secundary-menu-container-item a .picture {
-  display: none;
-}
+
 
 .secundary-menu-container-item a .icon {
   padding: 5px;
@@ -151,13 +153,18 @@ body {
     display: inline;
   }
 
-  .secundary-menu-container-item {
-    display: inline-block;
-    width: 44%;
-    margin-left: 3%;
+  .secundary-menu-container-item a .picture {
+    display: grid;
   }
 
+
   @media screen and (min-width: 768px) {
+    .secundary-menu-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+
     .secundary-menu-container-item {
       display: inline-block;
     }
@@ -173,6 +180,11 @@ body {
   }
 
   @media screen and (min-width: 1024px) {
+    .secundary-menu-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px;
+    }
 
     .wrapper {
       max-width: 85%;
@@ -199,20 +211,12 @@ body {
       border-bottom: 2px solid red;
     }
 
-    .secundary-menu-container-item {
-      display: inline-block;
-      width: 31.6%;
-      margin-left: 1%;
-    }
-
     .secundary-menu-container-item a {
       display: flex;
       flex-direction: column;
     }
 
-    .secundary-menu-container-item a .picture {
-      display: block;
-    }
+
 
     .secundary-menu-container-item a span {
       text-transform: uppercase;
@@ -223,7 +227,6 @@ body {
       display: none;
     }
 
-
     .picture {
       width: 100%;
     }
@@ -232,7 +235,7 @@ body {
   @media screen and (min-width: 1200px) {
 
     .wrapper {
-      max-width: 75%;
+      max-width: 80%;
       margin: 0 auto;
     }
   }
