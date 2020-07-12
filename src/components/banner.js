@@ -25,6 +25,7 @@ const Banner = () => {
       }
     }
   `)
+  console.log(data)
   return (
     <Slider autoplay duration={4000} className="slider-wrapper">
       {data.allContentfulBanners.edges.map(edge => {
