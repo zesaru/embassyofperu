@@ -13,7 +13,9 @@ const Header = () => (
             EMBAJADA DEL PERÚ <span>EN JAPÓN</span>
           </h1>
         </Link>
-        <div className="nav-language"></div>
+        <div className="nav-language">
+          <Link to="/">日本語</Link>
+        </div>
         <div className="nav-social"></div>
         <input
           type="checkbox"
