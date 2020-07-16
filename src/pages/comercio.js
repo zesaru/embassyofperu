@@ -5,7 +5,7 @@ import Banner from "../components/banner"
 import Image from "gatsby-image"
 import "./actividades.scss"
 
-const Comunicados = () => {
+const Comercio = () => {
   const data = useStaticQuery(graphql`
     query {
       allContentfulPosts(
@@ -58,4 +58,4 @@ const Comunicados = () => {
   )
 }
 
-export default Comunicados
+export default Comercio
