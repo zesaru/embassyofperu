@@ -14,7 +14,7 @@ const Header = () => (
           </h1>
         </Link>
         <div className="nav-language">
-          <Link to="/">日本語</Link>
+          <Link to="/jp">日本語</Link>
         </div>
         <div className="nav-social"></div>
         <input

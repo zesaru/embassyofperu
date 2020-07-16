@@ -2,7 +2,7 @@ import React from "react"
 import Header from "./header-jp"
 import Social from "../components/social"
 import Footer from "./footer"
-import "./layout.scss"
+import "./layout-jp.scss"
 
 const Layout = props => {
   return (
