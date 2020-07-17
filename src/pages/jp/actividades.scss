@@ -1,0 +1,27 @@
+.content_item img {
+  border-radius: 8px;
+}
+
+.content_item a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .content_title {
+    height: 52px;
+  }
+
+  .content_item {
+    display: inline-block;
+    width: 49%;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .content_item {
+    display: inline-block;
+    width: 31.6%;
+    margin-left: 1%;
+  }
+}

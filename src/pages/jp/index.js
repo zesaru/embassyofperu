@@ -3,7 +3,7 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 import { Helmet } from "react-helmet"
 import Layout from "../../components/layout-jp"
 import Img from "gatsby-image"
-import Banners from "../../components/banner"
+import Banners from "./components/banner"
 import "../index.scss"
 
 const IndexPage = () => {
