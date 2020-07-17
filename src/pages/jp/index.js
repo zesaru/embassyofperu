@@ -1,10 +1,10 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import { Helmet } from "react-helmet"
-import Layout from "../../components/layout-jp"
+import Layout from "./components/layout-jp"
 import Img from "gatsby-image"
 import Banners from "./components/banner"
-import "../../"
+import "../index.scss"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -82,7 +82,7 @@ const IndexPage = () => {
           {data.allContentfulCategories.edges.map(edge => {
             return (
               <div className="secundary-menu-container-item" key={edge.node.id}>
-                <Link to='"/jp/"+${edge.node.slug}'>
+                <Link to={edge.node.slugJa}>
                   <img
                     className="icon"
                     src={edge.node.imageCategory.file.url}
