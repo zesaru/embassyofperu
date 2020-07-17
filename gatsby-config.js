@@ -71,15 +71,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-robots-txt`,
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [
-          `M+PLUS+1p`,
-          `400,700`,
-        ],
-        display: 'swap'
-      }
-    }
   ],
 }
