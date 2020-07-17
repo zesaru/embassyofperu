@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet"
 import Layout from "../../components/layout-jp"
 import Img from "gatsby-image"
 import Banners from "./components/banner"
-import "../index.scss"
+import "../../"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -82,7 +82,7 @@ const IndexPage = () => {
           {data.allContentfulCategories.edges.map(edge => {
             return (
               <div className="secundary-menu-container-item" key={edge.node.id}>
-                <Link to={edge.node.slug}>
+                <Link to='"/jp/"+${edge.node.slug}'>
                   <img
                     className="icon"
                     src={edge.node.imageCategory.file.url}
