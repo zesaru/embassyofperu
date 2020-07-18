@@ -15,6 +15,7 @@ const IndexPage = () => {
             id
             nameJa
             slug
+            sluJa
             order
             picture {
               fluid(maxWidth: 500) {
@@ -82,7 +83,7 @@ const IndexPage = () => {
           {data.allContentfulCategories.edges.map(edge => {
             return (
               <div className="secundary-menu-container-item" key={edge.node.id}>
-                <Link to={edge.node.slugJa}>
+                <Link to={`${edge.node.sluJa}`}>
                   <img
                     className="icon"
                     src={edge.node.imageCategory.file.url}

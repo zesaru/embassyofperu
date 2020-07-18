@@ -43,8 +43,6 @@ body {
   align-items: center;
 }
 
-
-
 .secundary-menu-container-item a .icon {
   padding: 5px;
 }
@@ -70,15 +68,12 @@ body {
   height: 38px;
 }
 
-
 .menu {
   display: none;
   list-style: none;
   padding: 0;
   margin: 0;
   z-index: 20;
-
-
 
   &__button {
     height: 50px;
@@ -90,11 +85,11 @@ body {
     display: none;
 
     &:checked {
-      &~.menu__button {
+      & ~ .menu__button {
         background: url("../images/icon-close.svg") no-repeat center center;
       }
 
-      &~.menu {
+      & ~ .menu {
         display: block;
         position: absolute;
         top: 100%;
@@ -102,9 +97,11 @@ body {
         left: 0;
         right: 0;
         height: 100vh;
-        background: linear-gradient(to bottom,
-            var(--darkBlue) 0%,
-            transparent 90%);
+        background: linear-gradient(
+          to bottom,
+          var(--darkBlue) 0%,
+          transparent 90%
+        );
 
         .menu__item {
           &:first-of-type a {
@@ -132,14 +129,12 @@ body {
     }
   }
 
-
   @media screen and (min-width: 1024px) {
     display: flex;
 
     &__button {
       display: none;
     }
-
   }
 }
 
@@ -156,7 +151,6 @@ body {
   .secundary-menu-container-item a .picture {
     display: grid;
   }
-
 
   @media screen and (min-width: 768px) {
     .secundary-menu-container {
@@ -175,7 +169,6 @@ body {
 
     nav .escudo {
       width: 40px;
-
     }
   }
 
@@ -196,7 +189,7 @@ body {
     }
 
     nav ul {
-      width: 80%;
+      width: 70%;
       display: flex;
       justify-content: flex-end;
     }
@@ -216,8 +209,6 @@ body {
       flex-direction: column;
     }
 
-
-
     .secundary-menu-container-item a span {
       text-transform: uppercase;
       padding: 12px;
@@ -233,7 +224,6 @@ body {
   }
 
   @media screen and (min-width: 1200px) {
-
     .wrapper {
       max-width: 80%;
       margin: 0 auto;

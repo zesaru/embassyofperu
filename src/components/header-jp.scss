@@ -1,0 +1,30 @@
+.logo_title {
+  width: 180px;
+}
+
+
+h1 {
+  text-align: center;
+  margin: 2px;
+  font-size: 1rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 7px 1px;
+  height: 45px;
+}
+
+.nav-language {
+  width: 68px;
+  font-weight: 600;
+  border: 2px solid red;
+}
+
+.nav-language a {
+  align-items: center;
+  padding: 8px;
+}
