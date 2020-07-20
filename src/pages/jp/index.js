@@ -83,7 +83,7 @@ const IndexPage = () => {
           {data.allContentfulCategories.edges.map(edge => {
             return (
               <div className="secundary-menu-container-item" key={edge.node.id}>
-                <Link to={`${edge.node.sluJa}`}>
+                <Link to={`/jp/${edge.node.sluJa}`}>
                   <img
                     className="icon"
                     src={edge.node.imageCategory.file.url}
