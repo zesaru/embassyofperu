@@ -7,8 +7,8 @@ module.exports = {
     title: `Embassy of Peru`,
     description: `Pagina oficial de la Embajada del Perú en Japón.`,
     author: `@zesarum`,
-    url: `http://www.embajadadelperuenjapon.org`,
-    siteUrl: `http://www.embajadadelperuenjapon.org`,
+    url: `https://www.embajadadelperuenjapon.org`,
+    siteUrl: `https://www.embajadadelperuenjapon.org`,
   },
   plugins: [
     {
@@ -19,6 +19,7 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
