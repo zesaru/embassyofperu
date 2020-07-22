@@ -1,7 +1,14 @@
 import { Link } from "gatsby"
 import React from "react"
 import Escudo from "./escudo"
+import styled from "styled-components"
 import "./header.scss"
+
+const Heading = styled.h1`
+  padding: 0 0px;
+  font-size: 0.8rem;
+`
+
 
 const Header = () => (
   <header>
@@ -9,14 +16,13 @@ const Header = () => (
       <nav>
         <Escudo></Escudo>
         <Link to="/">
-          <h1>
-            EMBAJADA DEL PERÚ <span>EN JAPÓN</span>
-          </h1>
+          <Heading>
+            EMBAJADA DEL PERÚ EN JAPÓN
+          </Heading>
         </Link>
         <div className="nav-language">
-          <Link to="/">日本語</Link>
+          <Link to="/jp">日本語</Link>
         </div>
-        <div className="nav-social"></div>
         <input
           type="checkbox"
           id="menu"

@@ -4,8 +4,7 @@ import Img from "gatsby-image"
 import styled from "styled-components"
 
 const Logo = styled.div`
-  width: 50px;
-
+  width: 40px;
   @media screen and (min-width: 1024px) {
     width: 60px;
   }
@@ -25,11 +24,11 @@ const Escudo = () => {
   `)
   return (
     <Link to="/">
-      <Logo>
+     <Logo>
         <Img
           alt="escudo logo peru"
           fluid={data.placeholderImage.childImageSharp.fluid}
-        />
+        ></Img>
       </Logo>
     </Link>
   )
