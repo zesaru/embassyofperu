@@ -31,10 +31,15 @@ const Banner = () => {
         return (
           <div
             key={edge.node.id}
+            className="slider-content"
             style={{
               background: `url('${edge.node.image.fluid.src}') no-repeat center center`,
             }}
-          ></div>
+          >
+            <div className="inner">
+              <button>Ver</button>
+            </div>
+          </div>
         )
       })}
     </Slider>

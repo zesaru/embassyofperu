@@ -1,3 +1,10 @@
+
+
+
+* {
+  outline: none;
+}
+
 button {
   -webkit-appearance: none;
           appearance: none;
@@ -8,14 +15,13 @@ button {
   -webkit-transition: all .5s ease;
           transition: all .5s ease;
   border: none;
-  background: #e00816;
+  background: #FFD800;
   border-radius: 30px;
   text-transform: uppercase;
   box-sizing: border-box;
-  padding: 6px 6px;
+  padding: 15px 40px;
   font-weight: 400;
-  font-size: 10px;
-  color: white;
+  font-size: 13px;
   cursor: cursor;
 }
 
@@ -26,59 +32,69 @@ button:hover {
           filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
 }
 
-.wrapper-banner {
+.wrapper {
+  max-width: 1335px;
+  box-sizing: border-box;
+  padding: 0 20px;
   margin: auto;
+}
+
+.wrapper a {
+  display: inline-block;
+  margin: 5px;
+}
+
+.wrapper a:first-child {
+  margin-left: 0;
 }
 
 .slider-wrapper {
   position: relative;
-  height: 14vh;
+  height: 70vh;
   overflow: hidden;
 }
 
 .slide {
-  height: 14vh;
+  height: 70vh;
   background-size: cover !important;
 }
 
 .slide::before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.9)));
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
-  bottom: 0;
-  left: 0;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.9)));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    bottom: 0;
+    left: 0;
 }
 
-.previousButton,
-.nextButton {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  background: url('https://images.ctfassets.net/wunsyd67nevj/22eAFuHiUtQcJy9ms4huwW/89881e135014be114048f490e3c3ff05/next.svg') no-repeat center center / 40px;
-  width: 42px;
-  height: 42px;
-  text-indent: -9999px;
-  cursor: pointer;
+.previousButton, .nextButton {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 10;
+		background: url('http://svgshare.com/i/41_.svg') no-repeat center center / 16px;
+		width: 32px;
+		height: 32px;
+		text-indent: -9999px;
+		cursor: pointer;
 }
 
-.previousButton:hover,
-.nextButton:hover {
-  background: url('https://images.ctfassets.net/wunsyd67nevj/22eAFuHiUtQcJy9ms4huwW/89881e135014be114048f490e3c3ff05/next.svg') no-repeat center center / 40px;
+.previousButton:hover, .nextButton:hover {
+  background: url('http://svgshare.com/i/41_.svg') no-repeat center center / 16px;
 }
 
 .previousButton {
   left: 0;
   -webkit-transform: rotate(180deg) translateY(calc(50% + 0px));
-  transform: rotate(180deg) translateY(calc(50% + 0px));
+          transform: rotate(180deg) translateY(calc(50% + 0px));
 }
 
 .previousButton:hover {
-  left: 0px;
+  left: -10px;
 }
 
 .nextButton {
@@ -86,7 +102,7 @@ button:hover {
 }
 
 .nextButton:hover {
-  right: 0px;
+  right: -10px;
 }
 
 .slider-content {
@@ -98,8 +114,8 @@ button:hover {
   box-sizing: border-box;
   position: absolute;
   width: 100%;
-  top: 75%;
-  left: 70%;
+  top: 50%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -160,45 +176,28 @@ button:hover {
   display: block;
 }
 
-@media screen and (min-width: 768px) {
-  .wrapper-banner {
-    box-sizing: border-box;
-    padding: 0 20px;
-  }
-
-  .slider-wrapper {
-    height: 30vh;
-  }
-
-  .slide {
-    height: 30vh;
-  }
+@media (max-height: 500px) {
+  .slider-wrapper, .slide {
+    height: calc(100vh - 75px);
+  }    
 }
 
-@media screen and (min-width: 1024px) {
-  .wrapper-banner {
-    max-width: 1335px;
-    box-sizing: border-box;
-    padding: 0 20px;
-  }
-
-  .slider-wrapper {
-    height: 39vh;
-  }
-
-  .slide {
-    height: 39vh;
-  }
+@media (max-width: 640px) {
+  .slider-wrapper, .slide {
+    height: calc(80vh - 75px);
+  }    
 }
 
-@media screen and (min-width: 1800px) {
+@media (max-height: 600px) {
+  .slider-content .inner h1 {
+    font-size: 32px;
+  }    
+}
 
 
-  .slider-wrapper {
-    height: 60vh;
-  }
 
-  .slide {
-    height: 60vh;
+@media (max-width: 640px) {
+  .slider-content .inner h1 {
+    font-size: 32px;
   }
 }
