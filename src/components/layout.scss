@@ -85,11 +85,11 @@ body {
     display: none;
 
     &:checked {
-      & ~ .menu__button {
+      &~.menu__button {
         background: url("../images/icon-close.svg") no-repeat center center;
       }
 
-      & ~ .menu {
+      &~.menu {
         display: block;
         position: absolute;
         top: 100%;
@@ -97,11 +97,9 @@ body {
         left: 0;
         right: 0;
         height: 100vh;
-        background: linear-gradient(
-          to bottom,
-          var(--darkBlue) 0%,
-          transparent 90%
-        );
+        background: linear-gradient(to bottom,
+            var(--darkBlue) 0%,
+            transparent 90%);
 
         .menu__item {
           &:first-of-type a {
@@ -182,10 +180,6 @@ body {
     .wrapper {
       max-width: 85%;
       margin: 0 auto;
-    }
-
-    nav h1 {
-      margin-left: -16px;
     }
 
     nav ul {
