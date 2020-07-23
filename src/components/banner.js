@@ -1,8 +1,37 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Slider from "react-animated-slider"
+import styled from "styled-components"
 import "react-animated-slider/build/horizontal.css"
 import "./banner.scss"
+
+const LinkSeeMome = styled.a`
+  padding: 7px 10px;
+  border: none;
+  background: #e00816;
+  border-radius: 30px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 10px;
+  color: white;
+  cursor: cursor;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 20px;
+  }
+`
+
+const Inner = styled.div`
+  padding: 0 70px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  top: 85%;
+  left: 80%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+`
 
 const Banner = () => {
   const data = useStaticQuery(graphql`
@@ -16,7 +45,7 @@ const Banner = () => {
               file {
                 url
               }
-              fluid(maxWidth: 1400) {
+              fluid(maxWidth: 1600) {
                 ...GatsbyContentfulFluid
               }
             }
@@ -26,7 +55,8 @@ const Banner = () => {
     }
   `)
   return (
-    <Slider autoplay duration={4000} className="slider-wrapper">
+    //autoplay duration={4000}
+    <Slider className="slider-wrapper">
       {data.allContentfulBanners.edges.map(edge => {
         return (
           <div
@@ -36,9 +66,9 @@ const Banner = () => {
               background: `url('${edge.node.image.fluid.src}') no-repeat center center`,
             }}
           >
-            <div className="inner">
-              <button>Ver</button>
-            </div>
+            <Inner>
+              <LinkSeeMome href="#">Ver más</LinkSeeMome>
+            </Inner>
           </div>
         )
       })}
