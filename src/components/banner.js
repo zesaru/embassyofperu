@@ -10,7 +10,6 @@ const LinkSeeMome = styled.a`
   border: none;
   background: #e00816;
   border-radius: 30px;
-  text-transform: uppercase;
   box-sizing: border-box;
   font-weight: 400;
   font-size: 10px;
@@ -41,6 +40,7 @@ const Banner = () => {
           node {
             id
             name
+            url
             image {
               file {
                 url
@@ -56,6 +56,7 @@ const Banner = () => {
   `)
   return (
     //autoplay duration={4000}
+
     <Slider className="slider-wrapper">
       {data.allContentfulBanners.edges.map(edge => {
         return (
@@ -67,7 +68,9 @@ const Banner = () => {
             }}
           >
             <Inner>
-              <LinkSeeMome href="#">Ver más</LinkSeeMome>
+              <LinkSeeMome href={edge.node.url} target="_blank">
+                Ver más
+              </LinkSeeMome>
             </Inner>
           </div>
         )
