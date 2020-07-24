@@ -42,7 +42,7 @@ const Actividades = () => {
           {data.allContentfulPostjp.nodes.map(node => {
             return (
               <div className="content_item" key={node.id}>
-                <Link to={`/${node.slug}`}>
+                <Link to={`${node.slug}`}>
                   <div className="image_categories" key={node.id}>
                     <div className="content_title">
                       <p>{node.name}</p>

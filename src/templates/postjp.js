@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Image from "gatsby-image"
-import Asidecomunicados from "../components/asidecomunicados"
+import Asidejp from "../components/asidejp"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import "./post.scss"
 
@@ -34,7 +34,7 @@ const post = props => {
           {documentToReactComponents(props.data.contentfulPostjp.content.json)}
         </div>
         <aside className="wrapper">
-          <Asidecomunicados></Asidecomunicados>
+          <Asidejp></Asidejp>
         </aside>
       </div>
     </Layout>
