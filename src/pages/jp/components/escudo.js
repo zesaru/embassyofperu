@@ -16,7 +16,7 @@ const Escudo = () => {
     }
   `)
   return (
-    <Link to="/">
+    <Link to="/jp/">
       <Img
         alt="escudo logo peru"
         className="escudo"
