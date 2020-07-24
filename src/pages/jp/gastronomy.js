@@ -32,7 +32,6 @@ const Gastronomy = () => {
       }
     }
   `)
-  console.log(data.allContentfulPostjp.nodes[0].categoryId.nameJa)
   return (
     <Layout>
       <div className="wrapper">

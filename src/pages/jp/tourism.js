@@ -5,11 +5,11 @@ import Banner from "./components/bannerjp"
 import Image from "gatsby-image"
 import "./actividades.scss"
 
-const Actividades = () => {
+const Tourism = () => {
   const data = useStaticQuery(graphql`
     query {
       allContentfulPostjp(
-        filter: { categoryId: { slug: { eq: "actividades" } } }
+        filter: { categoryId: { slug: { eq: "turismo" } } }
         sort: { fields: datePost, order: DESC }
       ) {
         nodes {
@@ -58,4 +58,4 @@ const Actividades = () => {
   )
 }
 
-export default Actividades
+export default Tourism
