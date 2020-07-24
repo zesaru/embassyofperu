@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Embassy of Peru`,
+    title: `Embajada del Perú | 在日ペルー大使館 | Embassy of Peru`,
     description: `Pagina oficial de la Embajada del Perú en Japón.`,
     author: `@zesarum`,
     url: `https://www.embajadadelperuenjapon.org`,

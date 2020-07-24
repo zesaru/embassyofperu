@@ -71,7 +71,7 @@ const IndexPage = () => {
 
         <meta property="og:url" content={data.site.siteMetadata.url} />
         <meta property="og:type" content="website" />
-        <meta property="og:locale" content="es_ES" />
+        <meta property="og:locale" content="jp_JP" />
         <meta property="og:site_name" content={data.site.siteMetadata.title} />
         <meta property="og:image:alt" content="Embajada del Perú" />
         <meta property="og:image:width" content="512" />
