@@ -8,12 +8,12 @@ import "./post.scss"
 
 export const query = graphql`
   query($slug: String!) {
-    contentfulPosts(slug: { eq: $slug }) {
+    contentfulPostjp(slug: { eq: $slug }) {
       name
       content {
         json
       }
-      images {
+      image {
         file {
           url
         }
@@ -29,9 +29,9 @@ const post = props => {
     <Layout>
       <div className="wrapper post">
         <div className="content_post">
-          <Image fluid={props.data.contentfulPosts.images[0].fluid} alt="" />
-          <h2 className="post_title">{props.data.contentfulPosts.name}</h2>
-          {documentToReactComponents(props.data.contentfulPosts.content.json)}
+          <Image fluid={props.data.contentfulPostjp.image[0].fluid} alt="" />
+          <h2 className="post_title">{props.data.contentfulPostjp.name}</h2>
+          {documentToReactComponents(props.data.contentfulPostjp.content.json)}
         </div>
         <aside className="wrapper">
           <Asidecomunicados></Asidecomunicados>
