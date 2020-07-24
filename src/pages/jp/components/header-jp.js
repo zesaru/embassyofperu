@@ -1,17 +1,29 @@
 import { Link } from "gatsby"
 import React from "react"
 import Escudo from "./escudo"
-import "./header.scss"
+import styled from "styled-components"
 
+const Heading = styled.h1`
+  padding: 0 0px;
+  font-size: 0.8rem;
+  width: 120px;
+  margin-left: 0.7rem;
+
+  @media screen and (min-width: 767px) {
+    margin-left: -8.2rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 1.2rem;
+  }
+`
 const Header = () => (
   <header>
     <div className="wrapper">
       <nav>
         <Escudo></Escudo>
         <Link to="/">
-          <h1>
-          在日ペルー大使館
-          </h1>
+          <Heading>在日ペルー大使館</Heading>
         </Link>
         <div className="nav-language">
           <Link to="/">Español</Link>
