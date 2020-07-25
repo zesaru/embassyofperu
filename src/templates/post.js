@@ -1,10 +1,31 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { INLINES } from "@contentful/rich-text-types"
 import Layout from "../components/layout"
 import Image from "gatsby-image"
+
 import Asidecomunicados from "../components/asidecomunicados"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import "./post.scss"
+
+const options = {
+  renderNode: {
+    [INLINES.HYPERLINK]: node => {
+      if (node.data.uri.indexOf("youtube.com") !== -1) {
+        return (
+          <div class="video">
+            <iframe
+              src={node.data.uri}
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        )
+      }
+    },
+  },
+}
 
 export const query = graphql`
   query($slug: String!) {
@@ -31,7 +52,10 @@ const post = props => {
         <div className="content_post">
           <Image fluid={props.data.contentfulPosts.images[0].fluid} alt="" />
           <h2 className="post_title">{props.data.contentfulPosts.name}</h2>
-          {documentToReactComponents(props.data.contentfulPosts.content.json)}
+          {documentToReactComponents(
+            props.data.contentfulPosts.content.json,
+            options
+          )}
         </div>
         <aside className="wrapper">
           <Asidecomunicados></Asidecomunicados>

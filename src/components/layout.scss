@@ -68,6 +68,22 @@ body {
   height: 38px;
 }
 
+.video {
+  display: grid;
+  justify-items: center;
+
+  ::after {
+    // padding-top: 56.25%;
+    // display: block;
+    content: "";
+  }
+
+  iframe {
+    height: 180px;
+    width: -webkit-fill-available;
+  }
+}
+
 .menu {
   display: none;
   list-style: none;
@@ -168,6 +184,10 @@ body {
     nav .escudo {
       width: 40px;
     }
+
+    .video iframe {
+      height: 280px;
+    }
   }
 
   @media screen and (min-width: 1024px) {
@@ -214,6 +234,10 @@ body {
 
     .picture {
       width: 100%;
+    }
+
+    .video iframe {
+      height: 320px;
     }
   }
 
