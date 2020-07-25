@@ -32,12 +32,12 @@ const Asidejp = () => {
   `)
   return (
     <div>
-      <h2>Comunicados</h2>
+      <h2>ニュース</h2>
       <div>
         {data.allContentfulPostjp.nodes.map(node => {
           return (
             <div className="aside_item" key={node.id}>
-              <Link to={`/${node.sluJa}`}>
+              <Link to={`/jp/${node.slug}`}>
                 <div key={node.id}>
                   <div key={node.id}>
                     <p className="aside_comunicados_title">{node.name}</p>
