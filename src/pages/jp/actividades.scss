@@ -1,5 +1,7 @@
 .content_item img {
-  border-radius: 8px;
+  border-radius: 16px;
+  -webkit-box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
 }
 
 .content_item a {
