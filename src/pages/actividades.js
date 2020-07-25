@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import Layout from "../components/layout"
-import Banner from "../components/banner"
+import Banner from "../components/bannerjp"
 import Image from "gatsby-image"
 import "./actividades.scss"
 
