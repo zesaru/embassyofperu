@@ -68,7 +68,7 @@ const Banner = () => {
             }}
           >
             <Inner>
-              <LinkSeeMome href={edge.node.url} target="_blank">
+              <LinkSeeMome rel="noopener" href={edge.node.url} target="_blank">
                 Ver más
               </LinkSeeMome>
             </Inner>
