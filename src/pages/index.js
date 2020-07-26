@@ -29,15 +29,6 @@ const IndexPage = () => {
           }
         }
       }
-      site {
-        siteMetadata {
-          title
-          description
-          author
-          url
-          coverimage
-        }
-      }
     }
   `)
   return (

@@ -77,10 +77,10 @@ SEO.defaultProps = {
   lang: `es`,
   meta: [
     "Embajada",
-    "Peru",
-    "Japon",
+    "Perú",
+    "Japón",
     "Consulados Peruanos en Japon",
-    "Gastronomia",
+    "Gastronomía",
     "Comercio",
   ],
   description: `Pagina oficial de la Embajada del Perú en Japón`,
