@@ -9,13 +9,13 @@ module.exports = {
     author: `@zesarum`,
     url: `https://www.embajadadelperuenjapon.org`,
     siteUrl: `https://www.embajadadelperuenjapon.org`,
+    coverimage: `https://res.cloudinary.com/peruinjapan/image/upload/v1595746240/generales/embajadadelperuenjapon_bbu8tr.jpg`,
   },
   plugins: [
     {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
-        // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
