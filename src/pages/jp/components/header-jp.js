@@ -47,7 +47,7 @@ const Header = () => (
             <Link to="/jp/embassystaff">大使館職員</Link>
           </li>
           <li className="menu__item">
-            <Link to="/amistad">ペルーと日本の外交関係</Link>
+            <Link to="/jp/perujapan">ペルーと日本の外交関係</Link>
           </li>
         </ul>
       </nav>
