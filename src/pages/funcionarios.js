@@ -1,10 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
 import Banner from "../components/banner"
+import SEO from "../components/seo"
 
 const funcionarios = () => {
   return (
     <Layout>
+      <SEO title="funcionarios"></SEO>
       <div className="wrapper">
         <Banner></Banner>
         <h2>Funcionarios</h2>

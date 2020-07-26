@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import Banner from "../components/banner"
 import Image from "gatsby-image"
 import "./actividades.scss"
+import SEO from "../components/seo"
 
 const Comunicados = () => {
   const data = useStaticQuery(graphql`
@@ -34,6 +35,7 @@ const Comunicados = () => {
   `)
   return (
     <Layout>
+      <SEO title="Comunicados"></SEO>
       <div className="wrapper">
         <Banner></Banner>
         <h2>Comunicados</h2>

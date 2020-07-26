@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import Layout from "../components/layout"
 import Banner from "../components/banner"
+import SEO from "../components/seo"
 import Image from "gatsby-image"
 import "./actividades.scss"
 
@@ -32,11 +33,13 @@ const Comercio = () => {
       }
     }
   `)
+  const title = "Comercio"
   return (
     <Layout>
+      <SEO title={title}></SEO>
       <div className="wrapper">
         <Banner></Banner>
-        <h2>Comercio</h2>
+        <h2>{title}</h2>
         <div className="content">
           {data.allContentfulPosts.nodes.map(node => {
             return (

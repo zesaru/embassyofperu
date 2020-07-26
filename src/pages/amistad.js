@@ -1,13 +1,16 @@
 import React from "react"
 import Layout from "../components/layout"
 import Banner from "../components/banner"
+import SEO from "../components/seo"
 
 const amistad = () => {
+  const title = "Amistad Perú-Japón"
   return (
     <Layout>
+      <SEO title={title}></SEO>
       <div className="wrapper">
         <Banner></Banner>
-        <h2>Amistad Perú-Japón</h2>
+        <h2>{title}</h2>
         <p>
           El Perú fue el primer país latinoamericano y el decimocuarto del mundo
           que estableció relaciones diplomáticas con el Japón, mediante el

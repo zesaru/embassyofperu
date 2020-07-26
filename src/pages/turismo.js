@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import Banner from "../components/banner"
 import Image from "gatsby-image"
 import "./actividades.scss"
+import SEO from "../components/seo"
 
 const Turismo = () => {
   const data = useStaticQuery(graphql`
@@ -34,6 +35,7 @@ const Turismo = () => {
   `)
   return (
     <Layout>
+      <SEO title="Turismo"></SEO>
       <div className="wrapper">
         <Banner></Banner>
         <h2>Turismo</h2>
@@ -41,7 +43,7 @@ const Turismo = () => {
           {data.allContentfulPosts.nodes.map(node => {
             return (
               <div className="content_item" key={node.id}>
-                <Link to={`/${node.slug}`}>
+                <Link to={`/${node.slug}/`}>
                   <div className="image_categories" key={node.id}>
                     <div className="content_title" key={node.id}>
                       <p>{node.name}</p>

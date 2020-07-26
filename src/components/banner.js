@@ -5,7 +5,7 @@ import styled from "styled-components"
 import "react-animated-slider/build/horizontal.css"
 import "./banner.scss"
 
-const LinkSeeMome = styled.a`
+const LinkSeeMore = styled.a`
   padding: 7px 10px;
   border: none;
   background: #e00816;
@@ -55,8 +55,6 @@ const Banner = () => {
     }
   `)
   return (
-    //autoplay duration={4000}
-
     <Slider className="slider-wrapper" autoplay duration={3300}>
       {data.allContentfulBanners.edges.map(edge => {
         return (
@@ -68,9 +66,9 @@ const Banner = () => {
             }}
           >
             <Inner>
-              <LinkSeeMome rel="noopener" href={edge.node.url} target="_blank">
+              <LinkSeeMore rel="noopener" href={edge.node.url} target="_blank">
                 Ver más
-              </LinkSeeMome>
+              </LinkSeeMore>
             </Inner>
           </div>
         )
