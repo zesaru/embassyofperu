@@ -1,5 +1,6 @@
 import React from "react"
 import "./footer.scss"
+import { Link } from "gatsby"
 
 export default function footer() {
   return (
@@ -98,7 +99,17 @@ export default function footer() {
                 Consulado General del Peru en Nagoya
               </a>
             </h5>
-            <h5>Sección Comercial de la Embajada </h5>
+
+            <h5>
+              <Link
+                className="footer-enlace"
+                to="/seccioncomercial"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Sección Comercial de la Embajada
+              </Link>
+            </h5>
           </div>
         </div>
       </div>
