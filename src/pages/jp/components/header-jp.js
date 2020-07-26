@@ -41,10 +41,10 @@ const Header = () => (
             <Link to="/jp">ホーム</Link>
           </li>
           <li className="menu__item">
-            <Link to="/embajador">大使</Link>
+            <Link to="/jp/ambassador">大使</Link>
           </li>
           <li className="menu__item">
-            <Link to="/funcionarios">大使館職員</Link>
+            <Link to="/jp/embassystaff">大使館職員</Link>
           </li>
           <li className="menu__item">
             <Link to="/amistad">ペルーと日本の外交関係</Link>
