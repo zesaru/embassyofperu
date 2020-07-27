@@ -1,12 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { INLINES } from "@contentful/rich-text-types"
+import Asidecomunicados from "../components/asidecomunicados"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import Image from "gatsby-image"
-
-import Asidecomunicados from "../components/asidecomunicados"
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import "./post.scss"
 
 const options = {
@@ -23,6 +22,10 @@ const options = {
             ></iframe>
           </div>
         )
+      } else {
+          return(
+          <a href={node.data.uri} className="enlace_post" target="_blank">{node.content[0].value} </a>
+          )
       }
     },
   },
