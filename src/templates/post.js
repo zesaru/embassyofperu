@@ -52,7 +52,7 @@ export const query = graphql`
 const post = props => {
   return (
     <Layout>
-      <SEO title={props.data.contentfulPosts.name}></SEO>
+      <SEO title={props.data.contentfulPosts.name} coverimage={props.data.contentfulPosts.images[0].fluid}></SEO>
       <div className="wrapper post">
         <div className="content_post">
           <Image
