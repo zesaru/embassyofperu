@@ -237,7 +237,14 @@ body {
 
     .wrapper {
       max-width: 80%;
-      margin: 0 auto;
+    }
+  }
+
+
+  @media screen and (min-width: 1400px) {
+
+    .wrapper {
+      max-width: 70%;
     }
   }
 }

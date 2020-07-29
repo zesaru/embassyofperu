@@ -121,7 +121,7 @@ body {
           &:first-of-type a {
             padding-top: 1em;
             border-radius: 0.5em 0.5em 0 0;
-          }
+          } 
 
           &:last-of-type a {
             padding-bottom: 2em;
@@ -245,6 +245,12 @@ body {
     .wrapper {
       max-width: 80%;
       margin: 0 auto;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .wrapper {
+      max-width: 70%;
     }
   }
 }

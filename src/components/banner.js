@@ -55,7 +55,7 @@ const Banner = () => {
     }
   `)
   return (
-    <Slider className="slider-wrapper" autoplay duration={3300}>
+    <Slider className="slider-wrapper" autoplay duration={4500}>
       {data.allContentfulBanners.edges.map(edge => {
         return (
           <div
