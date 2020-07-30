@@ -2,11 +2,15 @@ import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
-import Banners from "../components/banner"
+//import Banners from "../components/banner"
 import SEO from "../components/seo"
 import "./index.scss"
+const BannersLazy = React.lazy(() =>
+  import("../components/banner")
+)
 
 const IndexPage = () => {
+
   const data = useStaticQuery(graphql`
     query {
       allContentfulCategories(sort: { fields: order }) {
@@ -31,11 +35,17 @@ const IndexPage = () => {
       }
     }
   `)
+  const isSSR = typeof window === "undefined"
   return (
     <Layout>
       <SEO></SEO>
       <div className="wrapper">
-        <Banners></Banners>
+      {!isSSR && (
+        <React.Suspense fallback={<div />}>
+          <BannersLazy />
+        </React.Suspense>
+      )}
+        {/* <Banners></Banners> */}
         <section className="secundary-menu-container">
           {data.allContentfulCategories.edges.map(edge => {
             return (
