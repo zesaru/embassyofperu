@@ -22,12 +22,11 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        google: {
-          families: ['Roboto:400,500']
-        }
-      }
+        fonts: [`Roboto:400,600`],
+        display: "swap",
+      },
     },
     {
       resolve: `gatsby-source-contentful`,
