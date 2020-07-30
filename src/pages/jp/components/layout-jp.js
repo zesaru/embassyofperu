@@ -1,6 +1,6 @@
 import React from "react"
 import Header from "./header-jp"
-import Social from "./social"
+import Social from "../../../components/social"
 import Footer from "./footer"
 import "./layout-jp.scss"
 
