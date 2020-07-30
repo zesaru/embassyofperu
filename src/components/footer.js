@@ -1,15 +1,30 @@
 import React from "react"
 import "./footer.scss"
 import { Link } from "gatsby"
+import styled from "styled-components"
+
+const title_footer = styled.p`
+  font-weight: 300;
+  padding-left: 8px;
+  margin: 4px;
+  font-size: 14px;
+`
+
+const link_footer = styled.p`
+  font-weight: 300;
+  margin: 2px;
+  padding: 4px;
+`
+
 
 export default function footer() {
   return (
     <footer className="wrapper">
       <div className="footer-level1">
         <div className="enlacesdeinteres">
-          <h4>ENLACES DE INTERES</h4>
+          <title_footer>ENLACES DE INTERES</title_footer>
           <div className="footer-enlaces">
-            <h5>
+
               <a
                 className="footer-enlace"
                 target="_blank"
@@ -18,8 +33,7 @@ export default function footer() {
               >
                 Ministerio de Relaciones Exteriores
               </a>
-            </h5>
-            <h5>
+
               <a
                 className="footer-enlace"
                 target="_blank"
@@ -28,8 +42,6 @@ export default function footer() {
               >
                 Gobierno del Perú
               </a>
-            </h5>
-            <h5>
               <a
                 className="footer-enlace"
                 target="_blank"
@@ -38,13 +50,13 @@ export default function footer() {
               >
                 Superintendencia Nacional de Migraciones
               </a>
-            </h5>
+            
           </div>
         </div>
         <div className="contacto">
-          <h4>ENLACES DE INVERSIÓN Y TURISMO</h4>
+          <title_footer>ENLACES DE INVERSIÓN Y TURISMO</title_footer>
           <div className="footer-enlaces">
-            <h5>
+            
               <a
                 className="footer-enlace"
                 target="_blank"
@@ -53,8 +65,8 @@ export default function footer() {
               >
                 Promoción de la Inversión Privada - PROINVERSIÓN
               </a>
-            </h5>
-            <h5>
+            
+            
               <a
                 className="footer-enlace"
                 target="_blank"
@@ -63,8 +75,7 @@ export default function footer() {
               >
                 Comisión de Promoción del Perú - PROMPERÚ
               </a>
-            </h5>
-            <h5>
+            
               <a
                 className="footer-enlace"
                 target="_blank"
@@ -73,13 +84,13 @@ export default function footer() {
               >
                 PERÚTRAVEL
               </a>
-            </h5>
+            
           </div>
         </div>
         <div className="instituciones">
-          <h4>INSTITUCIONES DEL PERÚ EN JAPÓN</h4>
+          <title_footer>INSTITUCIONES DEL PERÚ EN JAPÓN</title_footer>
           <div className="footer-enlaces">
-            <h5>
+            
               <a
                 className="footer-enlace"
                 target="_blank"
@@ -88,8 +99,6 @@ export default function footer() {
               >
                 Consulado General del Peru en Tokio
               </a>
-            </h5>
-            <h5>
               <a
                 className="footer-enlace"
                 target="_blank"
@@ -98,9 +107,9 @@ export default function footer() {
               >
                 Consulado General del Peru en Nagoya
               </a>
-            </h5>
+            
 
-            <h5>
+
               <Link
                 className="footer-enlace"
                 to="/seccioncomercial"
@@ -109,7 +118,7 @@ export default function footer() {
               >
                 Sección Comercial de la Embajada
               </Link>
-            </h5>
+
           </div>
         </div>
       </div>

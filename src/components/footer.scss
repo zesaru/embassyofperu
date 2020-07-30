@@ -20,18 +20,9 @@
   font-size: 14px;
 }
 
-h5 {
-  font-weight: 300;
-  margin: 2px;
-  padding: 4px;
-}
 
-h4 {
-  font-weight: 300;
-  padding-left: 8px;
-  margin: 4px;
-  font-size: 14px;
-}
+
+
 
 footer {
   background-color: #4d4949;
@@ -39,21 +30,22 @@ footer {
   padding-top: 10px;
 }
 
-.footer-title {
-  padding-left: 12px;
-  margin-bottom: 10px;
-}
+
 
 .footer-enlace {
   text-decoration: none;
   color: white;
+  display: block;
+  padding: 6px 0px;
 }
 
 @media screen and (min-width: 768px) {
   .contacto {
     display: initial;
   }
-
+  .footer-enlace {
+    padding: 14px 0px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
