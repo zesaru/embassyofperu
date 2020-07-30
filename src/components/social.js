@@ -1,6 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
 
 const SocialContainer = styled.div(`
   padding: 10px 0px;
@@ -27,7 +28,6 @@ const Social = () => {
       }
     }
   `)
-  console.log(data.allContentfulGeneralSetting.edges)
   return (
     <SocialContainer className="wrapper">
       {data.allContentfulGeneralSetting.edges.map(edge => {
