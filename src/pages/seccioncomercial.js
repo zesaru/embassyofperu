@@ -16,9 +16,13 @@ const oficinacomercial = () => {
           fin de contribuir al desarrollo sostenible y descentralizado del país.
         </p>
         <p>
-          <strong>Direccion:</strong> <br />
-          <strong>Telefonos:</strong> <br />
+          <strong>Direccion:</strong>HORIZON 1 Bldg. 8F, 
+          3-30-16 Nishiwaseda, Shinjuku-ku,
+          Tokyo 169-0051</p>
+        <p>  
+          <strong>Telefono:</strong>03-5797-7745
         </p>
+        <p><strong>Fax:</strong> 03-5797-7746 </p>
       </div>
     </Layout>
   )
