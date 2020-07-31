@@ -3,11 +3,11 @@ import "./footer.scss"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-const title_footer = styled.p`
-  font-weight: 300;
+const Title_footer = styled.p`
+  font-weight: 400;
   padding-left: 8px;
   margin: 4px;
-  font-size: 14px;
+  font-size: 17px;
 `
 
 export default function footer() {
@@ -15,7 +15,7 @@ export default function footer() {
     <footer className="wrapper">
       <div className="footer-level1">
         <div className="enlacesdeinteres">
-          <title_footer>ENLACES DE INTERES</title_footer>
+          <Title_footer>ENLACES DE INTERES</Title_footer>
           <div className="footer-enlaces">
             <a
               className="footer-enlace"
@@ -45,7 +45,7 @@ export default function footer() {
           </div>
         </div>
         <div className="contacto">
-          <title_footer>ENLACES DE INVERSIÓN Y TURISMO</title_footer>
+          <Title_footer>ENLACES DE INVERSIÓN Y TURISMO</Title_footer>
           <div className="footer-enlaces">
             <a
               className="footer-enlace"
@@ -76,7 +76,7 @@ export default function footer() {
           </div>
         </div>
         <div className="instituciones">
-          <title_footer>INSTITUCIONES DEL PERÚ EN JAPÓN</title_footer>
+          <Title_footer>INSTITUCIONES DEL PERÚ EN JAPÓN</Title_footer>
           <div className="footer-enlaces">
             <a
               className="footer-enlace"

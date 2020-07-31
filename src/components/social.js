@@ -4,9 +4,12 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
 const DivSocial = styled.div`
+  margin-bottom:5px;
   padding: 10px 0px;
   display: flex;
   justify-content: space-around;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 `
 
 const Social = () => {
