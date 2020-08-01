@@ -4,6 +4,7 @@ import Slider from "react-animated-slider"
 import styled from "styled-components"
 import "react-animated-slider/build/horizontal.css"
 import "./banner.scss"
+import BackgroundImage from "gatsby-background-image"
 
 const LinkSeeMore = styled.a`
   padding: 7px 10px;
@@ -35,18 +36,21 @@ const Inner = styled.div`
 const Banner = () => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulBanners(sort: { fields: order }) {
+      allContentfulCategories(filter: { order: { eq: 200 } }) {
         edges {
           node {
             id
             name
-            url
-            image {
+            slug
+            order
+            picture {
+              fluid(maxWidth: 1200) {
+                ...GatsbyContentfulFluid
+              }
+            }
+            imageCategory {
               file {
                 url
-              }
-              fluid(maxWidth: 1600) {
-                ...GatsbyContentfulFluid
               }
             }
           }
@@ -56,21 +60,15 @@ const Banner = () => {
   `)
   return (
     <Slider className="slider-wrapper" duration={4500}>
-      {data.allContentfulBanners.edges.map(edge => {
+      {data.allContentfulCategories.edges.map(edge => {
         return (
-          <div
-            key={edge.node.id}
-            className="slider-content"
-            style={{
-              background: `url('${edge.node.image.fluid.src}') no-repeat center center`,
-            }}
-          >
-            <Inner>
-              <LinkSeeMore rel="noopener" href={edge.node.url} target="_blank">
-                Ver más
-              </LinkSeeMore>
-            </Inner>
-          </div>
+          <BackgroundImage
+            Tag={`section`}
+            //id={`test`}
+            //className={className}
+            fluid={edge.node.picture.fluid}
+            fadeIn
+          />
         )
       })}
     </Slider>

@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
 const DivSocial = styled.div`
-  margin-bottom:5px;
+  margin-bottom: 5px;
   padding: 10px 0px;
   display: flex;
   justify-content: space-around;
@@ -35,7 +35,12 @@ const Social = () => {
     <DivSocial className="wrapper">
       {data.allContentfulGeneralSetting.edges.map(edge => {
         return (
-          <a target="_blank" rel="noreferrer" href={edge.node.url}>
+          <a
+            key={edge.node.id}
+            target="_blank"
+            rel="noreferrer"
+            href={edge.node.url}
+          >
             <Img fixed={edge.node.image.fixed} alt={edge.node.name} />
           </a>
         )
