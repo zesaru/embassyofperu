@@ -6,9 +6,7 @@ import Banners from "../components/banner"
 import SEO from "../components/seo"
 import "./index.scss"
 
-
 const IndexPage = () => {
-
   const data = useStaticQuery(graphql`
     query {
       allContentfulCategories(sort: { fields: order }) {
@@ -35,7 +33,7 @@ const IndexPage = () => {
   `)
   return (
     <Layout>
-      <SEO></SEO>
+      <SEO title="Home"></SEO>
       <div className="wrapper">
         <Banners></Banners>
         <section className="secundary-menu-container">

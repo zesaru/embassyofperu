@@ -34,7 +34,7 @@ const IndexPage = () => {
   `)
   return (
     <Layout>
-      <SEO></SEO>
+      <SEO title="Home"></SEO>
       <div className="wrapper">
         <Banners></Banners>
         <section className="secundary-menu-container">
