@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  background-color: red($color: #000000);
 }
 
 .wrapper {
@@ -121,7 +122,7 @@ body {
           &:first-of-type a {
             padding-top: 1em;
             border-radius: 0.5em 0.5em 0 0;
-          } 
+          }
 
           &:last-of-type a {
             padding-bottom: 2em;
@@ -131,7 +132,8 @@ body {
 
         a {
           background: white;
-          color: #060e14;;
+          color: #060e14;
+          ;
           text-decoration: none;
           padding: 0.8em 1em;
           font-weight: 700;
@@ -188,7 +190,7 @@ body {
 
     .video iframe {
       height: 280px;
-      
+
     }
   }
 
@@ -240,13 +242,13 @@ body {
 
     .video iframe {
       height: 320px;
-      width:-moz-available
+      width: -moz-available
     }
   }
 
   @media screen and (min-width: 1200px) {
     .wrapper {
-      max-width: 70%;
+      max-width: 72%;
       margin: 0 auto;
     }
   }

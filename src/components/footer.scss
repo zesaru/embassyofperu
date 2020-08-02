@@ -3,11 +3,6 @@
   display: none;
 }
 
-.footer-enlaces {
-  padding: 5px 7px 4px 0px;
-  border-left: solid 4px #e00816;
-}
-
 .footer-level1 {
   display: flex;
   justify-content: space-between;
@@ -21,28 +16,14 @@
 }
 
 
-
-
-
-footer {
-  background-color: #4d4949;
-  color: white;
-  padding-top: 10px;
-}
-
-
-
-.footer-enlace {
-  text-decoration: none;
-  color: white;
-  display: block;
-  padding: 6px 0px;
-}
-
 @media screen and (min-width: 768px) {
+
+  .instituciones,
   .contacto {
     display: initial;
+    width: 49%;
   }
+
   .footer-enlace {
     padding: 14px 0px;
   }

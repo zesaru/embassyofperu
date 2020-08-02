@@ -3,107 +3,127 @@ import "./footer.scss"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-const Title_footer = styled.p`
-  font-weight: 400;
-  padding-left: 8px;
-  margin: 4px;
-  font-size: 17px;
+const TitleFooter = styled.h3`
+  margin-bottom: 30px;
+  font-size: 18px;
+  border-bottom: 2px solid red;
+  color: #263b5e;
+`
+
+const ContentFooter = styled.footer`
+  background: #fbfbfd;
+`
+
+const Enlace = styled.a`
+  text-decoration: none;
+  color: #6a7695;
+`
+const ContentEnlaces = styled.ul`
+  margin-left: 0px;
+  padding: 0px;
+
+  li {
+    margin-bottom: 14px;
+  }
 `
 
 export default function footer() {
   return (
-    <footer className="wrapper">
+    <ContentFooter className="wrapper">
       <div className="footer-level1">
         <div className="enlacesdeinteres">
-          <Title_footer>ENLACES DE INTERES</Title_footer>
-          <div className="footer-enlaces">
-            <a
-              className="footer-enlace"
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.gob.pe/rree"
-            >
-              Ministerio de Relaciones Exteriores
-            </a>
-
-            <a
-              className="footer-enlace"
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.gob.pe/"
-            >
-              Gobierno del Perú
-            </a>
-            <a
-              className="footer-enlace"
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.migraciones.gob.pe/"
-            >
-              Superintendencia Nacional de Migraciones
-            </a>
-          </div>
+          <TitleFooter>ENLACES DE INTERES</TitleFooter>
+          <ContentEnlaces>
+            <li>
+              <Enlace
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.gob.pe/rree"
+              >
+                Ministerio de Relaciones Exteriores
+              </Enlace>
+            </li>
+            <li>
+              <Enlace
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.gob.pe/"
+              >
+                Gobierno del Perú
+              </Enlace>
+            </li>
+            <li>
+              <Enlace
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.migraciones.gob.pe/"
+              >
+                Sección Comercial
+              </Enlace>
+            </li>
+          </ContentEnlaces>
         </div>
         <div className="contacto">
-          <Title_footer>ENLACES DE INVERSIÓN Y TURISMO</Title_footer>
-          <div className="footer-enlaces">
-            <a
-              className="footer-enlace"
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.proinversion.gob.pe/"
-            >
-              Promoción de la Inversión Privada - PROINVERSIÓN
-            </a>
+          <TitleFooter>INVERSIÓN Y TURISMO</TitleFooter>
+          <ContentEnlaces>
+            <li>
+              <Enlace
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.proinversion.gob.pe/"
+              >
+                PROINVERSIÓN
+              </Enlace>
+            </li>
+            <li>
+              <Enlace
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.promperu.gob.pe/"
+              >
+                PROMPERÚ
+              </Enlace>
+            </li>
 
-            <a
-              className="footer-enlace"
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.promperu.gob.pe/"
-            >
-              Comisión de Promoción del Perú - PROMPERÚ
-            </a>
-
-            <a
-              className="footer-enlace"
-              target="_blank"
-              rel="noreferrer"
-              href="https://peru.travel/"
-            >
-              PERÚTRAVEL
-            </a>
-          </div>
+            <li>
+              <Enlace
+                target="_blank"
+                rel="noreferrer"
+                href="https://peru.travel/"
+              >
+                PERÚTRAVEL
+              </Enlace>
+            </li>
+          </ContentEnlaces>
         </div>
         <div className="instituciones">
-          <Title_footer>INSTITUCIONES DEL PERÚ EN JAPÓN</Title_footer>
-          <div className="footer-enlaces">
-            <a
-              className="footer-enlace"
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.consulado.pe/es/tokio/Paginas/Inicio.aspx"
-            >
-              Consulado General del Peru en Tokio
-            </a>
-            <a
-              className="footer-enlace"
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.consulado.pe/es/nagoya/Paginas/Inicio.aspx"
-            >
-              Consulado General del Peru en Nagoya
-            </a>
+          <TitleFooter>CONSULADOS</TitleFooter>
+          <ContentEnlaces>
+            <li>
+              <Enlace
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.consulado.pe/es/tokio/Paginas/Inicio.aspx"
+              >
+                Consulado General del Peru en Tokio
+              </Enlace>
+            </li>
+            <li>
+              <Enlace
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.consulado.pe/es/nagoya/Paginas/Inicio.aspx"
+              >
+                Consulado General del Peru en Nagoya
+              </Enlace>
+            </li>
 
-            <Link
-              className="footer-enlace"
-              to="/seccioncomercial"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Sección Comercial de la Embajada
-            </Link>
-          </div>
+            <li>
+              <Enlace href="#" target="_blank" rel="noreferrer">
+                Consulados Honorarios
+              </Enlace>
+            </li>
+          </ContentEnlaces>
         </div>
       </div>
       <div className="footer-level2">
@@ -111,6 +131,6 @@ export default function footer() {
         150-0012 Tokio Shibuya-ku Hiroo 2-3-1 <br />
         03-3406-4243 <br />
       </div>
-    </footer>
+    </ContentFooter>
   )
 }
