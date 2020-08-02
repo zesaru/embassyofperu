@@ -1,15 +1,10 @@
-import React from 'react'
+import React from "react"
 import Link from "gatsby-link"
 
 export default function menu() {
-    return (
-      <>
-          <input
-            type="checkbox"
-            id="menu"
-            name="menu"
-            className="menu__checkbox"
-          />
+  return (
+    <>
+      <input type="checkbox" id="menu" name="menu" className="menu__checkbox" />
       <label htmlFor="menu" className="menu__button"></label>
       <ul className="menu">
         <li className="menu__item">
@@ -25,7 +20,6 @@ export default function menu() {
           <Link to="/amistad">AMISTAD PERÚ-JAPÓN</Link>
         </li>
       </ul>
-        </>
-    )
+    </>
+  )
 }
-

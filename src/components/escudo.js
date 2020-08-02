@@ -3,33 +3,24 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import styled from "styled-components"
 
-const Logo = styled.div`
-  width: 40px;
-  @media screen and (min-width: 1024px) {
-    width: 60px;
-  }
-`
-
 const Escudo = ({ language = "" }) => {
   const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "escudo.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 60) {
-            ...GatsbyImageSharpFluid_noBase64
-          }
+    {
+      contentfulAsset(title: { eq: "escudodelperulogo" }) {
+        description
+        contentful_id
+        fixed(height: 40) {
+          ...GatsbyContentfulFixed
         }
       }
     }
   `)
   return (
     <Link to={`/${language}`}>
-      <Logo>
-        <Img
-          alt="escudo logo peru"
-          fluid={data.placeholderImage.childImageSharp.fluid}
-        ></Img>
-      </Logo>
+      <Img
+        alt={data.contentfulAsset.description}
+        fixed={data.contentfulAsset.fixed}
+      />
     </Link>
   )
 }
