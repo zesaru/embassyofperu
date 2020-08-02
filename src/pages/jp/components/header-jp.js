@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
-import Escudo from "./escudo"
+import Escudo from "../../../components/escudo"
 
 const Heading = styled.h1`
   padding: 0 0px;
@@ -21,7 +21,7 @@ const Header = () => (
   <header>
     <div className="wrapper">
       <nav>
-        <Escudo></Escudo>
+        <Escudo language="jp"></Escudo>
         <Link to="/jp/">
           <Heading>在日ペルー大使館</Heading>
         </Link>

@@ -26,7 +26,7 @@ const Header = () => (
   <header>
     <div className="wrapper">
       <nav>
-        <Escudo></Escudo>
+        <Escudo />
         <Link to="/">
           <Heading>EMBAJADA DEL PERÚ EN JAPÓN</Heading>
         </Link>

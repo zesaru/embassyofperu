@@ -10,7 +10,7 @@ const Logo = styled.div`
   }
 `
 
-const Escudo = () => {
+const Escudo = ({ language = "" }) => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "escudo.jpg" }) {
@@ -23,8 +23,8 @@ const Escudo = () => {
     }
   `)
   return (
-    <Link to="/">
-     <Logo>
+    <Link to={`/${language}`}>
+      <Logo>
         <Img
           alt="escudo logo peru"
           fluid={data.placeholderImage.childImageSharp.fluid}
