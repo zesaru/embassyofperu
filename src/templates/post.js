@@ -23,9 +23,17 @@ const options = {
           </div>
         )
       } else {
-          return(
-          <a href={node.data.uri} className="enlace_post" target="_blank">{node.content[0].value} </a>
-          )
+        return (
+          <a
+            href={node.data.uri}
+            className="enlace_post"
+            target="_blank"
+            without
+            rel="noreferrer"
+          >
+            {node.content[0].value}
+          </a>
+        )
       }
     },
   },
@@ -52,7 +60,10 @@ export const query = graphql`
 const post = props => {
   return (
     <Layout>
-      <SEO title={props.data.contentfulPosts.name} coverimage={props.data.contentfulPosts.images[0].fluid}></SEO>
+      <SEO
+        title={props.data.contentfulPosts.name}
+        coverimage={props.data.contentfulPosts.images[0].fluid}
+      ></SEO>
       <div className="wrapper post">
         <div className="content_post">
           <Image
