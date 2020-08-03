@@ -18,7 +18,7 @@ const Heading = styled.h1`
   }
 
   @media screen and (min-width: 1024px) {
-    margin-left: 1.2rem;
+    margin-left: -0.2rem;
     width: 215px;
   }
 `
