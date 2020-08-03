@@ -77,22 +77,22 @@ function SEO({ description, lang, meta, title, coverimage }) {
 
 SEO.defaultProps = {
   lang: `es`,
-  meta: [
-    "Embajada",
-    "Perú",
-    "Japón",
-    "Consulados Peruanos en Japon",
-    "Gastronomía",
-    "Comercio",
-  ],
+  meta: 
+        {
+          name: `description`,
+          content: `Pagina oficial de la Embajada del Perú en Japón.`,
+        }
+  ,
+  coverimage: `https://res.cloudinary.com/peruinjapan/image/upload/v1595746240/generales/embajadadelperuenjapon_bbu8tr.jpg`,
   description: `Pagina oficial de la Embajada del Perú en Japón`,
 }
 
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  postImage: PropTypes.string
 }
+
 
 export default SEO

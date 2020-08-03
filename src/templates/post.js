@@ -62,7 +62,7 @@ const post = props => {
     <Layout>
       <SEO
         title={props.data.contentfulPosts.name}
-        coverimage={props.data.contentfulPosts.images[0].fluid}
+        coverimage={props.data.contentfulPosts.images[0].file.url}
       ></SEO>
       <div className="wrapper post">
         <div className="content_post">
