@@ -8,8 +8,9 @@ import Menu from "./menu"
 const Heading = styled.h1`
   padding: 0 0px;
   font-size: 0.8rem;
+  font-weight:initial;
   width: 142px;
-  margin-left: 0.7rem;
+  margin-left: 0.8 rem;
 
   @media screen and (min-width: 767px) {
     margin-left: -10.2rem;

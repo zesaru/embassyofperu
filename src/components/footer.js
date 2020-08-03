@@ -3,7 +3,7 @@ import "./footer.scss"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-const TitleFooter = styled.h3`
+const TitleFooter = styled.p`
   margin-bottom: 30px;
   font-size: 18px;
   border-bottom: 2px solid red;
@@ -16,7 +16,7 @@ const ContentFooter = styled.footer`
 
 const Enlace = styled.a`
   text-decoration: none;
-  color: #6a7695;
+  color: #263b5e;
 `
 const ContentEnlaces = styled.ul`
   margin-left: 0px;
