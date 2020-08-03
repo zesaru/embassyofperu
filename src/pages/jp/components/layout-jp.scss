@@ -196,15 +196,16 @@ body {
     }
 
     nav ul {
-      width: 80%;
       display: flex;
       justify-content: flex-end;
+      background-color: red;
     }
 
     nav ul li a {
       text-decoration: none;
       padding: 0px 10px;
-      color: slategrey;
+      color: #263b5e;
+      font-weight: 500;
     }
 
     nav ul li a:hover {

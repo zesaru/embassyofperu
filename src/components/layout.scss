@@ -11,9 +11,14 @@ body {
   margin: 0 auto;
 }
 
+
 .container {
   max-width: 95%;
   margin: 0 auto;
+}
+
+.menu ul li a {
+  color: red;
 }
 
 .banner-section {
@@ -91,6 +96,7 @@ body {
   padding: 0;
   margin: 0;
   z-index: 20;
+  background:#fbfbfd;
 
   &__button {
     height: 50px;
@@ -207,9 +213,9 @@ body {
     }
 
     nav ul {
-      width: 70%;
       display: flex;
       justify-content: flex-end;
+
     }
 
     nav ul li a {
