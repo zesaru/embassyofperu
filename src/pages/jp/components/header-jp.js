@@ -3,31 +3,11 @@ import React from "react"
 import styled from "styled-components"
 import Escudo from "../../../components/escudo"
 
-const Heading = styled.h1`
-  padding: 0 0px;
-  font-size: 0.8rem;
-  width: 120px;
-  margin-left: 0.7rem;
-
-  @media screen and (min-width: 767px) {
-    margin-left: -8.2rem;
-  }
-
-  @media screen and (min-width: 1024px) {
-    margin-left: 1.2rem;
-  }
-  @media screen and (min-width: 1400px) {
-    margin-left: 4rem;
-  }
-`
 const Header = () => (
   <header>
     <div className="wrapper">
       <nav>
         <Escudo language="jp"></Escudo>
-        <Link to="/jp/">
-          <Heading>在日ペルー大使館</Heading>
-        </Link>
         <div className="nav-language">
           <Link to="/">Español</Link>
         </div>

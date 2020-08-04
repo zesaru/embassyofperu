@@ -169,14 +169,6 @@ body {
       display: inline-block;
     }
 
-    nav h1 {
-      margin-left: -110px;
-    }
-
-    nav .escudo {
-      width: 40px;
-
-    }
   }
 
   @media screen and (min-width: 1024px) {
@@ -189,10 +181,6 @@ body {
     .wrapper {
       max-width: 86%;
       margin: 0 auto;
-    }
-
-    nav h1 {
-      margin-left: -16px;
     }
 
     nav ul {
