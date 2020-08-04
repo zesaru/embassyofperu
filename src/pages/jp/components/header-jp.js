@@ -1,7 +1,11 @@
 import { Link } from "gatsby"
 import React from "react"
-import styled from "styled-components"
 import Escudo from "../../../components/escudo"
+import styled from "styled-components"
+
+const StyledLink = styled(Link)`
+  font-weight: initial;
+`
 
 const Header = () => (
   <header>
@@ -9,7 +13,7 @@ const Header = () => (
       <nav>
         <Escudo language="jp"></Escudo>
         <div className="nav-language">
-          <Link to="/">Español</Link>
+          <StyledLink to="/">Español</StyledLink>
         </div>
         <div className="nav-social"></div>
         <input

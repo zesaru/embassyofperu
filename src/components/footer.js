@@ -1,6 +1,5 @@
 import React from "react"
 import "./footer.scss"
-import { Link } from "gatsby"
 import styled from "styled-components"
 
 const TitleFooter = styled.p`
@@ -54,9 +53,8 @@ export default function footer() {
             </li>
             <li>
               <Enlace
-                target="_blank"
                 rel="noreferrer"
-                href="https://www.migraciones.gob.pe/"
+                href="/seccioncomercial/"
               >
                 Sección Comercial
               </Enlace>
@@ -105,7 +103,7 @@ export default function footer() {
                 rel="noreferrer"
                 href="https://www.consulado.pe/es/tokio/Paginas/Inicio.aspx"
               >
-                Consulado General del Peru en Tokio
+                Consulado General del Perú en Tokio
               </Enlace>
             </li>
             <li>
@@ -114,13 +112,13 @@ export default function footer() {
                 rel="noreferrer"
                 href="https://www.consulado.pe/es/nagoya/Paginas/Inicio.aspx"
               >
-                Consulado General del Peru en Nagoya
+                Consulado General del Perú en Nagoya
               </Enlace>
             </li>
 
             <li>
               <Enlace href="#" target="_blank" rel="noreferrer">
-                Consulados Honorarios
+                Consulados Honorarios del Perú
               </Enlace>
             </li>
           </ContentEnlaces>

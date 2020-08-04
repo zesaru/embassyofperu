@@ -1,7 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
 import Escudo from "./escudo"
-import styled from "styled-components"
 import "./header.scss"
 import Menu from "./menu"
 
