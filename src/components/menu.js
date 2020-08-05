@@ -8,16 +8,16 @@ export default function menu() {
       <label htmlFor="menu" className="menu__button"></label>
       <ul className="menu">
         <li className="menu__item">
-          <Link to="/">INICIO</Link>
+          <Link to="/">Inicio</Link>
         </li>
         <li className="menu__item">
-          <Link to="/embajador">EMBAJADOR</Link>
+          <Link to="/embajador">Embajador</Link>
         </li>
         <li className="menu__item">
-          <Link to="/funcionarios">FUNCIONARIOS</Link>
+          <Link to="/funcionarios">Funcionarios</Link>
         </li>
         <li className="menu__item">
-          <Link to="/amistad">AMISTAD PERÚ-JAPÓN</Link>
+          <Link to="/amistad">Amistad Perú-Japón</Link>
         </li>
       </ul>
     </>

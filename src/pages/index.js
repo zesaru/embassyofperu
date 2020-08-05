@@ -5,6 +5,11 @@ import Img from "gatsby-image"
 import Banners from "../components/banner"
 import SEO from "../components/seo"
 import "./index.scss"
+import styled from "styled-components"
+
+const CategoriaSpan = styled.span`
+  text-transform: capitalize;
+`
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -46,7 +51,7 @@ const IndexPage = () => {
                     src={edge.node.imageCategory.file.url}
                     alt={edge.node.name}
                   />
-                  <span> {edge.node.name}</span>
+                  <CategoriaSpan>{edge.node.name}</CategoriaSpan>
                   {edge.node.picture !== null && (
                     <Img
                       className="picture"

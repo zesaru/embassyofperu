@@ -4,16 +4,11 @@ import Escudo from "./escudo"
 import "./header.scss"
 import Menu from "./menu"
 
-
-
 const Header = () => (
   <header>
     <div className="wrapper">
       <nav>
         <Escudo />
-        {/* <Link to="/">
-          
-        </Link> */}
         <div className="nav-language">
           <Link to="/jp">日本語</Link>
         </div>

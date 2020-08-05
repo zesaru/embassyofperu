@@ -1,3 +1,7 @@
+header {
+  background: #efefef;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -5,6 +9,7 @@ nav {
   position: relative;
   padding: 7px 1px;
   height: 45px;
+
 }
 
 .nav-language {
@@ -18,4 +23,3 @@ nav {
   align-items: center;
   padding: 4px;
 }
-

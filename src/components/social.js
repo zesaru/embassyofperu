@@ -3,13 +3,19 @@ import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
+const SocialTitle = styled.h2`
+  font-size: 0.8em;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 1em;
+  }
+`
+
 const DivSocial = styled.div`
-  margin-bottom: 5px;
-  padding: 10px 0px;
+  padding: 2em 0;
   display: flex;
-  justify-content: space-around;
-  border-top: 2px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  gap: 2em;
+  align-items: center;
 `
 
 const Social = () => {
@@ -33,6 +39,7 @@ const Social = () => {
   `)
   return (
     <DivSocial className="wrapper">
+      <SocialTitle>Siguenos en redes sociales</SocialTitle>
       {data.allContentfulGeneralSetting.edges.map(edge => {
         return (
           <a
