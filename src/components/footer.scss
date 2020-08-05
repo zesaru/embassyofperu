@@ -1,29 +1,12 @@
-.contacto,
-.instituciones {
+
+.contactoesp {
   display: none;
 }
-
-.footer-level1 {
-  background: #c4c4c4;
-}
-
-.footer-level1 .wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-level2 {
-  text-align: center;
-  padding: 10px 0;
-  background-color: rgb(20, 18, 18);
-  font-size: 14px;
-}
-
 
 @media screen and (min-width: 768px) {
 
   .instituciones,
-  .contacto {
+  .contactoesp {
     display: initial;
     width: 49%;
   }
@@ -38,11 +21,11 @@
     display: initial;
   }
 
-  .contacto,
+  .contactoesp,
   .instituciones,
   .enlacesdeinteres {
-    width: 31%;
     padding-left: 10px;
+    width: 31%;
   }
 
 }

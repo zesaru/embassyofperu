@@ -2,18 +2,24 @@ import React from "react"
 import "./footer.scss"
 import styled from "styled-components"
 
-const TitleFooter = styled.p`
-  margin-bottom: 30px;
-  font-size: 18px;
-  border-bottom: 2px solid red;
-  color: #263b5e;
+const ContentFooter = styled.footer`
+  background: #c4c4c4;
 `
 
-const ContentFooter = styled.footer`
-  background: #fbfbfd;
-`
+const FooterLevel1 =styled.div`
+  display:flex;
+  justify-content:space-around;
+  `
+
+  const TitleFooter = styled.p`
+    margin-bottom: 30px;
+    font-size: 18px;
+    border-bottom: 2px solid red;
+    color: #263b5e;
+  `
 
 const Enlace = styled.a`
+  font-size: 16px;
   text-decoration: none;
   color: #263b5e;
 `
@@ -27,11 +33,19 @@ const ContentEnlaces = styled.ul`
   }
 `
 
+const FooterLevel2 =styled.div`
+  text-align: center;
+  padding: 10px 0;
+  background-color: rgb(20, 18, 18);
+  font-size: 14px;
+  color:white;
+  `
+
 export default function footer() {
   return (
+    <>
     <ContentFooter>
-      <div className="footer-level1">
-        <div className="wrapper">
+      <FooterLevel1  className="wrapper">
           <div className="enlacesdeinteres">
             <TitleFooter>ENLACES DE INTERES</TitleFooter>
             <ContentEnlaces>
@@ -60,7 +74,7 @@ export default function footer() {
               </li>
             </ContentEnlaces>
           </div>
-          <div className="contacto">
+          <div className="contactoesp">
             <TitleFooter>INVERSIÓN Y TURISMO</TitleFooter>
             <ContentEnlaces>
               <li>
@@ -122,15 +136,13 @@ export default function footer() {
               </li>
             </ContentEnlaces>
           </div>
-        </div>
-      </div>
-      <div className="footer-level2">
-        <div className="wrapper">
-          Embajada del Perú en Japón <br />
-          150-0012 Tokio Shibuya-ku Hiroo 2-3-1 <br />
-          03-3406-4243 <br />
-        </div>
-      </div>
+      </FooterLevel1>
     </ContentFooter>
+          <FooterLevel2>
+            Embajada del Perú en Japón <br />
+            150-0012 Tokio Shibuya-ku Hiroo 2-3-1 <br />
+            03-3406-4243 <br />
+          </FooterLevel2>
+    </>
   )
 }

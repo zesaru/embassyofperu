@@ -9,7 +9,7 @@ const Layout = props => {
     <>
       <Header />
       {props.children}
-      <Social />
+      <Social title="是非、公式ページをフォローして下さい！" />
       <Footer />
     </>
   )

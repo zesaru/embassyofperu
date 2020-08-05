@@ -5,20 +5,35 @@ import styled from "styled-components"
 
 const SocialTitle = styled.h2`
   font-size: 0.8em;
+  display:block;
 
   @media screen and (min-width: 1024px) {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 `
 
 const DivSocial = styled.div`
   padding: 2em 0;
   display: flex;
-  gap: 2em;
+  gap: 1em;
   align-items: center;
+
+  @media screen and (min-width: 724px) {
+    display: flex;
+    gap: 6em;
+  }
+
+  @media screen and (min-width: 1400px) {
+    display: flex;
+    gap: 10em;
+  }
 `
 
-const Social = () => {
+const StyledImg = styled(Img)`
+
+`
+
+const Social = ({title}) => {
   const data = useStaticQuery(graphql`
     query {
       allContentfulGeneralSetting {
@@ -28,7 +43,7 @@ const Social = () => {
             name
             url
             image {
-              fixed(width: 50) {
+              fixed(width: 45) {
                 ...GatsbyContentfulFixed_withWebp
               }
             }
@@ -39,7 +54,7 @@ const Social = () => {
   `)
   return (
     <DivSocial className="wrapper">
-      <SocialTitle>Siguenos en redes sociales</SocialTitle>
+      <SocialTitle>{title}</SocialTitle>
       {data.allContentfulGeneralSetting.edges.map(edge => {
         return (
           <a
@@ -48,7 +63,7 @@ const Social = () => {
             rel="noreferrer"
             href={edge.node.url}
           >
-            <Img fixed={edge.node.image.fixed} alt={edge.node.name} />
+            <StyledImg fixed={edge.node.image.fixed} alt={edge.node.name} />
           </a>
         )
       })}

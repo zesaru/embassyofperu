@@ -8,7 +8,7 @@ import "./index.scss"
 import styled from "styled-components"
 
 const CategoriaSpan = styled.span`
-  text-transform: capitalize;
+  
 `
 
 const IndexPage = () => {
