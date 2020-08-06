@@ -21,7 +21,7 @@ const embassystaff = () => {
           <strong> 貿易経済、機関、環境、協力担当</strong>
         </p>
         <p>
-          ファン・ルイス・バサン・テハダ <br /> <strong> 駐在武官</strong>
+        エドゥアルド・バシリオ・シルバ・マルズカ<br /> <strong> 駐在武官</strong>
         </p>
         <p>
           フェルナンド・アルバレダ <br /> <strong> 商務参事官</strong>
