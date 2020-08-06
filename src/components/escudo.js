@@ -27,7 +27,7 @@ const Escudo = ({ language = "" }) => {
   return (
     <ContentLogo>
       <StyledLink  to={`/`}>
-        <img src="//images.ctfassets.net/wunsyd67nevj/7HEqcEOhHf9mykRo3gE3kN/a17145bd60fd9475ccde0d4b12f03d66/Escudo_del_Peru.png" width="50px" alt="logo escudo del peru"></img>
+        <img src="//images.ctfassets.net/wunsyd67nevj/7HEqcEOhHf9mykRo3gE3kN/8790a13dd641f0a9b7ae99f3106d07e7/Escudo_del_Peru.jpg" width="50px" alt="logo escudo del peru"></img>
         <Heading>
           { language === "jp" ? "在日ペルー大使館" : "EMBAJADA DEL PERÚ EN JAPÓN" }  
         </Heading>
