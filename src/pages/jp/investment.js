@@ -3,6 +3,7 @@ import { graphql, useStaticQuery, Link } from "gatsby"
 import Layout from "./components/layout-jp"
 import Banner from "./components/bannerjp"
 import Image from "gatsby-image"
+import SEO from "../../components/seo"
 import "./actividades.scss"
 
 const Investment = () => {
@@ -34,6 +35,7 @@ const Investment = () => {
   `)
   return (
     <Layout>
+      <SEO title="商務" />
       <div className="wrapper">
         <Banner></Banner>
         <h2>{data.allContentfulPostjp.nodes[0].categoryId.nameJa}</h2>

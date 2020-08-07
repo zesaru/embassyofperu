@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "./components/layout-jp"
 import Banner from "./components/bannerjp"
+import SEO from "../../components/seo"
 
 const ambassador = () => {
   return (

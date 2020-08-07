@@ -4,6 +4,7 @@ import Layout from "./components/layout-jp"
 import Banner from "./components/bannerjp"
 import Image from "gatsby-image"
 import "./actividades.scss"
+import SEO from "../../components/seo"
 
 const Comunicados = () => {
   const data = useStaticQuery(graphql`
@@ -34,6 +35,7 @@ const Comunicados = () => {
   `)
   return (
     <Layout>
+      <SEO title="ニュース"/>
       <div className="wrapper">
         <Banner></Banner>
         <h2>{data.allContentfulPostjp.nodes[0].categoryId.nameJa}</h2>
