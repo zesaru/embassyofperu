@@ -26,7 +26,7 @@ const Heading = styled.h1`
 const Escudo = ({ language = "" }) => {  
   return (
     <ContentLogo>
-      <StyledLink  to={`/`}>
+      <StyledLink  to={`/${language}/`}>
         <img src="//images.ctfassets.net/wunsyd67nevj/7HEqcEOhHf9mykRo3gE3kN/8790a13dd641f0a9b7ae99f3106d07e7/Escudo_del_Peru.jpg" width="50px" alt="logo escudo del peru"></img>
         <Heading>
           { language === "jp" ? "在日ペルー大使館" : "EMBAJADA DEL PERÚ EN JAPÓN" }  
