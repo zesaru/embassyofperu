@@ -183,20 +183,6 @@ body {
       margin: 0 auto;
     }
 
-    nav ul {
-      display: flex;
-      justify-content: flex-end;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      padding: 0px 10px;
-      color: #263b5e;
-    }
-
-    nav ul li a:hover {
-      border-bottom: 2px solid red;
-    }
 
     .secundary-menu-container-item a {
       display: flex;

@@ -1,5 +1,6 @@
 import React from "react"
 import Link from "gatsby-link"
+import "./menu.scss"
 
 export default function menu() {
   return (
