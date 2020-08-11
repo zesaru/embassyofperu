@@ -2,12 +2,15 @@ import React from "react"
 import Layout from "./components/layout-jp"
 import Banner from "./components/bannerjp"
 import SEO from "../../components/seo"
+import { FotoEmbajador } from "../../components/fotoembajador"
 
 const ambassador = () => {
   return (
     <Layout>
+      <SEO title="ハロルド・フォルサイト 駐日ペルー大使"/>
       <div className="wrapper">
         <Banner></Banner>
+        <FotoEmbajador />
         <h2>ハロルド・フォルサイト</h2>
         <h3>駐日ペルー大使</h3>
         <p>

@@ -3,11 +3,6 @@ import Layout from "../components/layout"
 import Banner from "../components/banner"
 import SEO from "../components/seo"
 import { FotoEmbajador } from "../components/fotoembajador"
-import styled from "styled-components"
-
-const Contenedorh1h2 = styled.div`
-    justify-content:center;
-`
 
 const embajador = () => {
   return (
@@ -16,10 +11,8 @@ const embajador = () => {
       <div className="wrapper">
         <Banner></Banner>
         <FotoEmbajador/>
-        <Contenedorh1h2>
           <h2>HAROLD FORSYTH</h2>
           <h3>Embajador del Perú en Japón</h3>
-        </Contenedorh1h2>
         <p>
           Nacido en Lima, Perú <br />
           Casado con María Verónica Sommer Mayer, tres hijos: <br />
