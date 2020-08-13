@@ -92,11 +92,12 @@ const embajador = () => {
         <p>
           <strong>Instituciones a las que pertenece:</strong>
         </p>
-        Colegio de Periodistas del Perú (No. 1911 de la Orden) <br /> Asociación
-        de Funcionarios del Servicio Diplomático del Perú <br /> Sociedad
-        Fundadores de la Independencia, Vencedores el 2 de mayo de 1866 y
-        Defensores Calificados de la Patria Sociedad Bolivariana de Colombia
-        Instituto Sanmartiniano del Perú Club de Regatas “Lima” Club Alianza
+        Colegio de Periodistas del Perú (No. 1911 de la Orden) <br /> 
+        Asociación de Funcionarios del Servicio Diplomático del Perú <br />  
+        Benemérita Sociedad Fundadores de la Independencia, Vencedores el 2 de mayo de 1866 y Defensores Calificados de la Patria<br /> 
+        Sociedad Bolivariana de Colombia <br/>
+        Instituto Sanmartiniano del Perú<br /> 
+        Club de Regatas “Lima”<br /> Club Alianza <br />
         Lima Phoenix Club (Lima) <br />
         <p>
           <strong>Periodismo: </strong>
