@@ -12,7 +12,7 @@ const funcionarios = () => {
         <h2>Funcionarios</h2>
         <p>
           Ministro Consejero , Mario Bustamante <br />
-          <strong>Jefe de Cancillería</strong>
+          <strong>Jefe de Cancillería y Representante Permanente Alterno ante la OIMT</strong>
         </p>
         <p>
           Consejera, Marita Puertas <br />
@@ -39,13 +39,12 @@ const funcionarios = () => {
         <p>
           Tercer Secretario, Amador Pantoja <br />
           <strong>
-            Encargado de la Sección Cultural de la Embajada y gestión de riesgos
-            de desastres .
+            Encargado de la Sección Cultural de la Embajada
           </strong>
         </p>
         <p>
           Tercer Secretario, Alejandro Hidalgo <br />
-          <strong></strong>
+          <strong>Encargado de gestión del riesgo de desastres, promoción turística, G-7, G-20, RCEP, ASEAN y redes sociales.</strong>
         </p>
         <p>
           William Valderrama <br />
