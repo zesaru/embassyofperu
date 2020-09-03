@@ -114,7 +114,7 @@ export default function footer() {
                 <Enlace
                   target="_blank"
                   rel="noreferrer"
-                  href="https://www.consulado.pe/es/tokio/Paginas/Inicio.aspx"
+                  href="https://bit.ly/2QCoVIr"
                 >
                   Consulado General del Perú en Tokio
                 </Enlace>
@@ -123,7 +123,7 @@ export default function footer() {
                 <Enlace
                   target="_blank"
                   rel="noreferrer"
-                  href="https://www.consulado.pe/es/nagoya/Paginas/Inicio.aspx"
+                  href="https://bit.ly/2D17RrJ"
                 >
                   Consulado General del Perú en Nagoya
                 </Enlace>
