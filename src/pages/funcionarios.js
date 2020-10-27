@@ -37,12 +37,6 @@ const funcionarios = () => {
           </strong>
         </p>
         <p>
-          Tercer Secretario, Amador Pantoja <br />
-          <strong>
-            Encargado de la Sección Cultural de la Embajada
-          </strong>
-        </p>
-        <p>
           Tercer Secretario, Alejandro Hidalgo <br />
           <strong>Encargado de la Sección Cultural, gestión del riesgo de desastres, promoción turística, G-7, G-20, RCEP, ASEAN y redes sociales.</strong>
         </p>
