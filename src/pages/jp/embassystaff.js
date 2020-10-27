@@ -9,8 +9,7 @@ const embassystaff = () => {
         <Banner></Banner>
         <h2>大使館職員</h2>
         <p>
-          {" "}
-          マリオ・ブスタマンテ（公使参事官）
+          グスタボ•フィゲロア（公使）
           <br />
           <strong>次席</strong>　
         </p>
@@ -31,7 +30,7 @@ const embassystaff = () => {
           <strong> 政治、司法協力、科学技術担当</strong>
         </p>
         <p>
-          アマドール・パントハ（三等書記官）
+          アレバンドロ•イダルゴ（三等書記官）
           <br />
           <strong> 文化、災害危機管理担当</strong>
         </p>

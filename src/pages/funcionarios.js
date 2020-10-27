@@ -11,7 +11,7 @@ const funcionarios = () => {
         <Banner></Banner>
         <h2>Funcionarios</h2>
         <p>
-          Ministro Consejero , Mario Bustamante <br />
+          Ministro, Gustavo Figueroa <br />
           <strong>Jefe de Cancillería y Representante Permanente Alterno ante la OIMT</strong>
         </p>
         <p>
@@ -44,7 +44,7 @@ const funcionarios = () => {
         </p>
         <p>
           Tercer Secretario, Alejandro Hidalgo <br />
-          <strong>Encargado de gestión del riesgo de desastres, promoción turística, G-7, G-20, RCEP, ASEAN y redes sociales.</strong>
+          <strong>Encargado de la Sección Cultural, gestión del riesgo de desastres, promoción turística, G-7, G-20, RCEP, ASEAN y redes sociales.</strong>
         </p>
         <p>
           William Valderrama <br />
