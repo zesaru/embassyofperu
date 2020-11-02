@@ -12,13 +12,13 @@ const funcionarios = () => {
         <h2>Funcionarios</h2>
         <p>
           Ministro, Gustavo Figueroa <br />
-          <strong>Jefe de Cancillería y Representante Permanente Alterno ante la OIMT</strong>
+          <strong>Jefe de Cancillería</strong>
         </p>
         <p>
           Consejera, Marita Puertas <br />
           <strong>
             Encargada de asuntos económicos-comerciales, Organismos, medio
-            ambiente y cooperación.
+            ambiente , cooperación y Representante Permanente Alterno ante la OIMT.
           </strong>
         </p>
         <p>

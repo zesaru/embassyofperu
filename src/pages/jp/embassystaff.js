@@ -9,7 +9,7 @@ const embassystaff = () => {
         <Banner></Banner>
         <h2>大使館職員</h2>
         <p>
-          グスタボ•フィゲロア（公使）
+          グスタボ・フィゲロア（公使）
           <br />
           <strong>次席</strong>　
         </p>
@@ -17,7 +17,7 @@ const embassystaff = () => {
         <p>
           マリタ・プエルタス（参事官）
           <br />
-          <strong> 貿易経済、機関、環境、協力担当</strong>
+          <strong> 貿易経済、機関、環境、協力担当、国際熱帯木材委員会のペルー常任代表委</strong>
         </p>
         <p>
         エドゥアルド・バシリオ・シルバ・マルズカ<br /> <strong> 駐在武官</strong>
@@ -30,7 +30,7 @@ const embassystaff = () => {
           <strong> 政治、司法協力、科学技術担当</strong>
         </p>
         <p>
-          アレバンドロ•イダルゴ（三等書記官）
+          アレハンドロ・イダルゴ（三等書記官）
           <br />
           <strong> 文化、災害危機管理担当</strong>
         </p>
