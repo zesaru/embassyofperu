@@ -42,7 +42,10 @@ const IndexPage = () => {
       <div className="wrapper">
         <Banners></Banners>
         <section className="secundary-menu-container">
-          {data.allContentfulCategories.edges.map(edge => {
+        {window.location.href= "https://www.gob.pe/embajada-del-peru-en-japon" 
+}
+          { 
+          data.allContentfulCategories.edges.map(edge => {
             return (
               <div className="secundary-menu-container-item" key={edge.node.id}>
                 <Link to={edge.node.slug}>
