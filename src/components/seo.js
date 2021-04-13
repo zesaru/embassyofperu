@@ -31,6 +31,7 @@ function SEO({ description, lang, meta, title, coverimage }) {
   const image = coverimage || site.siteMetadata.coverimage
   return (
     <Helmet
+      
       htmlAttributes={{
         lang,
       }}
@@ -71,7 +72,10 @@ function SEO({ description, lang, meta, title, coverimage }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+      
+    >
+      <meta http-equiv="refresh" content="0; URL=https://www.gob.pe/embajada-del-peru-en-japon" />
+    </Helmet>
   )
 }
 
