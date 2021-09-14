@@ -74,7 +74,7 @@ function SEO({ description, lang, meta, title, coverimage }) {
       ].concat(meta)}
       
     >
-      <meta http-equiv="refresh" content="0; URL=https://www.gob.pe/embajada-del-peru-en-japon" />
+      
     </Helmet>
   )
 }
